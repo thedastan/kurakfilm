@@ -1,0 +1,29 @@
+@import 'reset';
+
+.phone-input {
+	border-bottom: 1px solid #565656;
+	input {
+		width: 100%;
+		font-size: 18px !important;
+		line-height: 20px !important;
+		font-weight: 400 !important;
+		color: #101010 !important;
+		background: transparent !important;
+		height: 60px !important;
+		border: none !important;
+	}
+	.react-international-phone-country-selector {
+		button {
+			height: 100%;
+			width: 40px;
+			background: transparent !important;
+			border: none;
+		}
+	}
+}
+
+.full-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
