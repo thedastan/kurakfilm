@@ -1,5 +1,5 @@
-import { Box } from '@chakra-ui/react'
+import Cast from '@/components/cast'
 
 export default function CastActorsPage() {
-	return <Box></Box>
+	return <Cast />
 }

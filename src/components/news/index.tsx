@@ -1,13 +1,23 @@
+'use client'
+
 import { Box, Container, Flex, SimpleGrid, Text } from '@chakra-ui/react'
+import Image from 'next/image'
+import Link from 'next/link'
 import { PiShareFatLight } from 'react-icons/pi'
 import { SlEye } from 'react-icons/sl'
 
 import { CONTAINER_WIDTH } from '@/config/_variables.config'
 
+import { useNews } from '@/hooks/data-hooks'
+import useTypedLocale from '@/hooks/useLocale'
+
 import Description from '../ui/texts/Description'
 import TitleComponent from '../ui/texts/TitleComponent'
 
 const News = () => {
+	const locale = useTypedLocale()
+	const { data, isLoading } = useNews()
+
 	return (
 		<Box
 			mt='169px'
@@ -22,55 +32,65 @@ const News = () => {
 					columns={2}
 					spacing='37px'
 				>
-					{[1, 2, 3, 4].map(el => (
-						<Flex
-							key={el}
-							p='4'
-							gap='4'
-							bg='#FFFFFF'
-							boxShadow='0px 30px 60px 0px #20385526'
-							alignItems='start'
+					{data?.map(el => (
+						<Link
+							key={el.id}
+							href={el.link}
+							target='_blank'
 						>
-							<Box
-								minW='118px'
-								h='100%'
-								bg='red'
-							/>
+							<Flex
+								p='4'
+								gap='4'
+								bg='#FFFFFF'
+								boxShadow='0px 30px 60px 0px #20385526'
+								alignItems='start'
+								_hover={{ textDecoration: 'underline' }}
+							>
+								<Box
+									minW='118px'
+									h='100%'
+								>
+									<Image
+										src={el.image}
+										alt='Image'
+										width={118}
+										height={85}
+										className='unscroll'
+									/>
+								</Box>
 
-							<Box>
-								<Description
-									noOfLines={2}
-									color='#000000'
-								>
-									Erke Dzhumakmatova and Emil Atageldiev’s gritty drama Kurak is
-									set to be the first France-Kyrgyzstan co-production in two
-									decades, following an agreement signed between CNC and
-									Kyrgyzstan’s Cinema Department in Cannes.
-								</Description>
-								<Flex
-									mt='2'
-									justifyContent='end'
-									alignItems='center'
-									color='#000000'
-									opacity='.6'
-									gap='5'
-								>
-									<Flex
-										gap='2'
-										alignItems='center'
+								<Box>
+									<Description
+										noOfLines={2}
+										color='#000000'
 									>
-										<SlEye fontSize='18px' />
-										<Text
-											lineHeight='16.94px'
-											fontSize='14px'
+										{el[`description_${locale}`]}
+									</Description>
+									<Flex
+										mt='2'
+										justifyContent='end'
+										alignItems='center'
+										color='#000000'
+										opacity='.6'
+										gap='5'
+									>
+										<Flex
+											gap='2'
+											alignItems='center'
 										>
-											56
-										</Text>
+											<SlEye fontSize='18px' />
+											<Text
+												lineHeight='16.94px'
+												fontSize='14px'
+											>
+												{el.views}
+											</Text>
+										</Flex>
+										<PiShareFatLight fontSize='18px' />
 									</Flex>
-									<PiShareFatLight fontSize='18px' />
-								</Flex>
-							</Box>
-						</Flex>
+								</Box>
+							</Flex>
+						</Link>
 					))}
 				</SimpleGrid>
 			</Container>

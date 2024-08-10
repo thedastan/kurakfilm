@@ -3,7 +3,7 @@ import axios, { CreateAxiosDefaults } from 'axios'
 import { errorCatch } from './error'
 
 // export const API_ADDRESS = process.env.BASE_API_URL
-export const API_ADDRESS = 'https://back.flower-buro.com.kg/'
+export const API_ADDRESS = 'https://kurak.pythonanywhere.com/'
 
 const options: CreateAxiosDefaults = {
 	baseURL: API_ADDRESS,
