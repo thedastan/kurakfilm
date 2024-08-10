@@ -1,6 +1,7 @@
 import createMiddleware from 'next-intl/middleware'
 
 import { LOCALES } from './i18n'
+import { EnumIntl } from './types/intl.types'
 
 const locales = LOCALES
 
@@ -9,10 +10,10 @@ export default createMiddleware({
 	locales,
 
 	// Used when no locale matches
-	defaultLocale: 'kg'
+	defaultLocale: EnumIntl.KYRGYZ
 })
 
 export const config = {
 	// Match only internationalized pathnames
-	matcher: ['/', '/(kg|en|ru)/:path*']
+	matcher: ['/', '/(kg|en|ru|de|es|fr|it)/:path*']
 }

@@ -1,0 +1,53 @@
+{
+	"Navbar": {
+		"Main": {
+			"home": "Accueil",
+			"cast_actors": "Acteurs de la distribution",
+			"backstage": "Les coulisses",
+			"film_stills": "Photos du film",
+			"news": "Actualités",
+			"contact": "Contact"
+		},
+		"collaboration": "Si vous souhaitez recevoir un film à des fins éducatives, veuillez nous contacter en utilisant les coordonnées fournies.",
+		"developer": "Développé par Motion Web"
+	},
+	"Hero": {
+		"subtitle": "Le prophète Muhammad (ﷺ)",
+		"description": "“LES MEILLEURS D'ENTRE VOUS SONT CEUX QUI SONT LES MEILLEURS AVEC LEURS FEMMES”",
+		"button": "Voir la bande-annonce"
+	},
+	"About": {
+		"title": "En savoir plus sur le cinéma",
+		"description": "Basées sur des événements réels, plusieurs histoires sur la déresponsabilisation des femmes sont étroitement liées, s'influençant mutuellement, se déroulant dans le contexte de la société traditionnelle et patriarcale du Kirghizistan moderne et aboutissant finalement à une série de résultats tragiques.",
+		"Characteristics": {
+			"chron": "Chronique",
+			"language": "Langue",
+			"country": "Pays d'origine",
+			"age": "Restrictions d'âge",
+			"1": "D",
+			"2": "Kirghizie",
+			"3": "Kirghizistan",
+			"4": "16+"
+		}
+	},
+
+	"crew": {
+		"title": "équipe de tournage"
+	},
+	"producers": {
+		"title": "Producteurs"
+	},
+	"news": {
+		"title": "Actualités"
+	},
+	"backstage": {
+		"title": "Les coulisses"
+	},
+	"film_stills": {
+		"title": "photos de films",
+		"query": "Nous sommes là pour faire en sorte que votre rêve devienne réalité, même le plus fou, tout ce que vous voulez, nous pouvons le créer pour remplir la maison de vos rêves.",
+		"description": "Nous sommes là pour faire en sorte que votre rêve devienne réalité, même le plus fou, tout ce que vous voulez, nous pouvons le créer pour remplir la maison de vos rêves.",
+		"virgin": "FILLE VIRGINE",
+		"virgin_description": "Nous sommes là pour réaliser votre rêve, même le plus fou, tout ce que vous voulez, nous pouvons le créer pour remplir la maison de vos rêves. Nous sommes là pour réaliser vos rêves, même les plus fous."
+	}
+}

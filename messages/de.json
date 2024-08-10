@@ -1,0 +1,53 @@
+{
+	"Navbar": {
+		"Main": {
+			"home": "Startseite",
+			"cast_actors": "Darsteller",
+			"backstage": "Hinter den Kulissen",
+			"film_stills": "Filmstills",
+			"news": "Nachrichten",
+			"contact": "Kontakt"
+		},
+		"collaboration": "Wenn Sie einen Film zu Bildungszwecken erhalten möchten, kontaktieren Sie uns bitte über die angegebenen Kontaktdaten.",
+		"developer": "Entwickelt von Motion Web"
+	},
+	"Hero": {
+		"subtitle": "Prophet Muhammad (ﷺ)",
+		"description": "“DIE BESTEN UNTER EUCH SIND DIEJENIGEN, DIE AM BESTEN ZU IHREN FRAUEN SIND”",
+		"button": "Den Trailer ansehen"
+	},
+	"About": {
+		"title": "Mehr über Film",
+		"description": "Basierend auf wahren Begebenheiten sind mehrere Geschichten über die Entmachtung von Frauen eng miteinander verwoben und beeinflussen sich gegenseitig. Sie entfalten sich vor dem Hintergrund der traditionellen, patriarchalischen Gesellschaft des heutigen Kirgisistan und führen schließlich zu einer Reihe von tragischen Ergebnissen.",
+		"Characteristics": {
+			"chron": "Chronik",
+			"language": "Sprache",
+			"country": "Herkunftsland",
+			"age": "Altersbeschränkungen",
+			"1": "D",
+			"2": "Kirgisisch",
+			"3": "Kirgisistan",
+			"4": "16+"
+		}
+	},
+
+	"crew": {
+		"title": "Filmteam"
+	},
+	"producers": {
+		"title": "Erzeuger"
+	},
+	"news": {
+		"title": "Nachrichten"
+	},
+	"backstage": {
+		"title": "Hinter den Kulissen"
+	},
+	"film_stills": {
+		"title": "Filmstills",
+		"query": "Wir sind hier, um Ihren Traum wahr werden zu lassen, egal wie verrückt, was auch immer Sie wollen, wir können es schaffen, Ihren Wohntraum zu erfüllen.",
+		"description": "Wir sind hier, um Ihren Traum wahr werden zu lassen, egal wie verrückt, was auch immer Sie wollen, wir können es schaffen, um Ihren Wohntraum zu verwirklichen..",
+		"virgin": "VIRGIN GIRL",
+		"virgin_description": "Wir sind hier, um Ihren Traum wahr werden zu lassen, egal wie verrückt, was auch immer Sie wollen, können wir schaffen, um Ihr Traumhaus voll zu füllen. Wir sind hier, um Ihren Traum wahr werden zu lassen, egal wie verrückt."
+	}
+}

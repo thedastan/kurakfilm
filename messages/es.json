@@ -1,0 +1,51 @@
+{
+	"Navbar": {
+		"Main": {
+			"home": "Inicio",
+			"cast_actors": "Reparto de actores",
+			"backstage": "Detrás de cámaras",
+			"film_stills": "Fotogramas de la película",
+			"news": "Noticias",
+			"contact": "Contacto"
+		},
+		"collaboration": "Si desea recibir una película para mostrar con fines educativos, comuníquese con nosotros utilizando los detalles de contacto proporcionados.",
+		"developer": "Desarrollado por Motion Web"
+	},
+	"Hero": {
+		"subtitle": "Profeta Muhammad (ﷺ)",
+		"description": "“LOS MEJORES DE USTEDES SON LOS QUE MEJOR TRATAN A SUS MUJERES”",
+		"button": "Ver el tráiler"
+	},
+	"About": {
+		"title": "Más sobre la película",
+		"description": "Basado en hechos reales, varias historias sobre la desprotección de las mujeres están estrechamente entrelazadas, afectándose mutuamente y desarrollándose en el contexto de la sociedad tradicional y patriarcal del Kirguistán moderno, lo que finalmente resulta en una serie de desenlaces trágicos.",
+		"Characteristics": {
+			"chron": "Crónica",
+			"language": "Idioma",
+			"country": "País de origen",
+			"age": "Restricciones de edad",
+			"1": "D",
+			"2": "Kirguís",
+			"3": "Kirguistán",
+			"4": "16+"
+		}
+	},
+
+	"crew": {
+		"title": "Equipo de filmación"
+	},
+	"producers": {
+		"title": "Productores"
+	},
+	"news": {
+		"title": "Noticias"
+	},
+	"backstage": {
+		"title": "Detrás de cámaras"
+	},
+	"film_stills": {
+		"title": "Fotogramas de la película",
+		"query": "Estamos aquí para hacer realidad tu sueño, no importa cuán loco sea, lo que quieras, podemos crear para cumplir tu hogar soñado.",
+		"description": "Estamos aquí para hacer realidad tu sueño"
+	}
+}

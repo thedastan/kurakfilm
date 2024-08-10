@@ -27,3 +27,13 @@
 	height: 100%;
 	object-fit: cover;
 }
+
+.hero-home {
+	background: url('../assets/img/hero-bg.png') no-repeat center/cover;
+	min-height: 120vh;
+}
+
+.about {
+	background: url('../assets/img/about-rectangle.png') no-repeat center/cover;
+	min-height: 651px;
+}

@@ -1,5 +1,55 @@
 {
-	"Header": {
-		"title": "Header"
+	"Navbar": {
+		"Main": {
+			"home": "Home",
+			"cast_actors": "Cast actors",
+			"backstage": "Backstage",
+			"film_stills": "Film stills",
+			"news": "News",
+			"contact": "Contact"
+		},
+		"collaboration": "If you would like to receive a film to be shown for educational purposes, please contact us using the contact details provided.",
+		"developer": "Developed by Motion Web"
+	},
+
+	"Hero": {
+		"subtitle": "Prophet Muhammad (ﷺ)",
+		"description": "“THE BEST OF YOU ARE THOSE WHO ARE BEST TO THEIR WOMEN”",
+		"button": "Watch the Trailer"
+	},
+
+	"About": {
+		"title": "More about film",
+		"description": "Based on true events, several stories about disempowerment of women, are closely intertwined, affecting each other’s, unfolding against the background of the traditional, patriarchal society of modern-day Kyrgyzstan ultimately result in a series of tragic outcomes.",
+		"Characteristics": {
+			"chron": "Chron",
+			"language": "Language",
+			"country": "Country of Origin",
+			"age": "Age restrictions",
+			"1": "D",
+			"2": "Kyrgyz",
+			"3": "Kyrgyzstan",
+			"4": "16+"
+		}
+	},
+
+	"crew": {
+		"title": "film crew"
+	},
+	"producers": {
+		"title": "Producers"
+	},
+	"news": {
+		"title": "News"
+	},
+	"backstage": {
+		"title": "Backstage"
+	},
+	"film_stills": {
+		"title": "film stills",
+		"query": "We are here to make your dream comes true, no matter how crazy, whatever you want we make can create to full fill your dream home.",
+		"description": "We are here to make your dream comes true, no matter how crazy, whatever you want we make can create to full fill your dream home.",
+		"virgin": "VIRGIN GIRL",
+		"virgin_description": "We are here to make your dream comes true, no matter how crazy, whatever you want we make can create to full fill your dream home. We are here to make your dream comes true, no matter how crazy."
 	}
 }

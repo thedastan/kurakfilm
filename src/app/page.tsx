@@ -1,5 +1,7 @@
 import { redirect } from 'next/navigation'
 
+import { EnumIntl } from '@/types/intl.types'
+
 export default function RootPage() {
-	redirect('/kg')
+	redirect(`/${EnumIntl.KYRGYZ}`)
 }

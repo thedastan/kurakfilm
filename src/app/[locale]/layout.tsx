@@ -8,8 +8,6 @@ import Header from '@/components/navbar/header'
 import { inter } from '@/constants/fonts'
 import { SITE_NAME } from '@/constants/seo.constants'
 
-import { HEADER_HEIGHT, MINI_HEADER_HEIGHT } from '@/config/_variables.config'
-
 import { Providers } from '../providers'
 
 import YandexMetrika from '@/seo/YandexMetrika'
@@ -40,12 +38,7 @@ export default function RootLayout({
 				<ChakraProvider>
 					<Providers>
 						<Header />
-						<Box
-							pb={{ md: '180px', base: '54px' }}
-							pt={{ md: HEADER_HEIGHT, base: MINI_HEADER_HEIGHT }}
-						>
-							{children}
-						</Box>
+						<Box>{children}</Box>
 						<Footer />
 						<Toaster
 							theme='dark'

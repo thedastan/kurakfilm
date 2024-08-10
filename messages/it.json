@@ -1,0 +1,53 @@
+{
+	"Navbar": {
+		"Main": {
+			"home": "Casa",
+			"cast_actors": "Attori del cast",
+			"backstage": "Backstage",
+			"film_stills": "Fotogrammi del film",
+			"news": "Notizie",
+			"contact": "Contatto"
+		},
+		"collaboration": "Se desiderate ricevere un filmato da proiettare a scopo didattico, contattateci utilizzando i recapiti indicati.",
+		"developer": "Sviluppato da Motion Web"
+	},
+	"Hero": {
+		"subtitle": "Profeta Maometto (ﷺ)",
+		"description": "“I MIGLIORI DI VOI SONO QUELLI CHE SONO MIGLIORI CON LE LORO DONNE”",
+		"button": "Guarda il trailer"
+	},
+	"About": {
+		"title": "Per saperne di più sul cinema",
+		"description": "Basato su fatti realmente accaduti, diverse storie di emancipazione femminile sono strettamente intrecciate e si influenzano a vicenda, svolgendosi sullo sfondo della società tradizionale e patriarcale dell'odierno Kirghizistan e sfociando infine in una serie di tragici esiti.",
+		"Characteristics": {
+			"chron": "Cronologia",
+			"language": "Lingua",
+			"country": "Paese di origine",
+			"age": "Limiti di età",
+			"1": "D",
+			"2": "Kirghizo",
+			"3": "Kirghizistan",
+			"4": "16+"
+		}
+	},
+
+	"crew": {
+		"title": "troupe cinematografica"
+	},
+	"producers": {
+		"title": "Produttori"
+	},
+	"news": {
+		"title": "Notizie"
+	},
+	"backstage": {
+		"title": "Backstage"
+	},
+	"film_stills": {
+		"title": "fotogrammi del film",
+		"query": "Siamo qui per far sì che il vostro sogno diventi realtà, non importa quanto sia folle, qualsiasi cosa vogliate possiamo crearla per riempire completamente la vostra casa dei sogni.",
+		"description": "Siamo qui per far sì che il vostro sogno diventi realtà, non importa quanto sia folle, qualsiasi cosa vogliate possiamo crearla per riempire completamente la vostra casa dei sogni.",
+		"virgin": "RAGAZZA VERGINE",
+		"virgin_description": "Siamo qui per far sì che il vostro sogno diventi realtà, non importa quanto sia folle, qualsiasi cosa vogliate possiamo crearla per riempire completamente la vostra casa dei sogni. Siamo qui per far sì che il vostro sogno diventi realtà, non importa quanto sia folle."
+	}
+}

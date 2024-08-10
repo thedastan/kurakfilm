@@ -1,54 +1,31 @@
-import { Box, Divider, Flex, Heading, Text } from '@chakra-ui/react'
-import { PropsWithChildren } from 'react'
-import { MdKeyboardArrowRight } from 'react-icons/md'
+import { ChakraProps, Heading } from '@chakra-ui/react'
 
-interface Props extends PropsWithChildren {
-	viewMoreFn?: () => void
-	color?: string
+import { fjalla_one } from '@/constants/fonts'
+
+interface Props extends ChakraProps {
+	children: string
 }
-const TitleComponent = ({ children, color = '#000000', viewMoreFn }: Props) => {
+const TitleComponent = ({
+	children,
+	fontSize = { md: '60px', base: '54px' },
+	lineHeight = { md: '75.41px', base: '67.87px' },
+	color = '#CAC7C5',
+	...props
+}: Props) => {
 	return (
-		<Box mb={{ md: '6', base: '4' }}>
-			<Flex
-				justifyContent='space-between'
-				alignItems='center'
-			>
-				<Heading
-					as='h1'
-					color={color}
-					fontWeight={'700'}
-					lineHeight={{ md: '32.63px', base: '27.61px' }}
-					fontSize={{ md: '26px', base: '22px' }}
-					textTransform={{ md: 'uppercase', base: 'none' }}
-				>
-					{children}
-				</Heading>
-				{!!viewMoreFn && (
-					<Flex
-						onClick={viewMoreFn}
-						color='#141414'
-						alignItems='center'
-						cursor='pointer'
-						_active={{ opacity: '.7' }}
-					>
-						<Text
-							fontWeight='500'
-							fontSize={{ md: '20px', base: '14px' }}
-							lineHeight={{ md: '26px', base: '18.2px	' }}
-						>
-							ВСЕ
-						</Text>
-						<MdKeyboardArrowRight fontSize='20px' />
-					</Flex>
-				)}
-			</Flex>
-			<Divider
-				display={{ md: 'block', base: 'none' }}
-				mt='32px'
-				bg='#0000001A'
-				h='1.18px'
-			/>
-		</Box>
+		<Heading
+			className={fjalla_one.className}
+			as='h1'
+			{...props}
+			color={color}
+			fontWeight='400'
+			lineHeight={lineHeight}
+			textTransform='uppercase'
+			letterSpacing='-1px'
+			fontSize={fontSize}
+		>
+			{children}
+		</Heading>
 	)
 }
 

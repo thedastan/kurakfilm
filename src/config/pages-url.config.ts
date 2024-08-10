@@ -1,24 +1,19 @@
-class PUBLIC {
+import { IntlType } from '@/types/intl.types'
+
+class DASHBOARD {
 	private root = '/'
 
-	MAIN = this.root
-	AUTH = `${this.root}auth`
-	CART = `${this.root}cart`
-	FAVORITES = `${this.root}favorites`
-	PRODUCTS = `${this.root}products`
-	PRODUCT_DETAIL = (slug: number | string) => {
-		return `${this.PRODUCTS}/${slug}`
+	HOME = (locale: IntlType) => {
+		return this.root + locale
 	}
-
-	CATALOG = `${this.root}catalog`
-	CATALOG_DETAIL = (slug: number | string) => {
-		return `${this.CATALOG}/${slug}`
+	ACTORS = (locale: IntlType) => {
+		return `${this.root + locale}/cast-actors`
 	}
-
-	BLOG = `${this.root}blog`
-	BLOG_DETAIL = (slug: number | string) => {
-		return `${this.BLOG}/${slug}`
+	BACKSTAGE = (locale: IntlType) => {
+		return `${this.root + locale}/backstage`
 	}
-	AUTHORS_BOUQUET = `${this.CATALOG}/authors-bouquet`
+	FILM_STILLS = (locale: IntlType) => {
+		return `${this.root + locale}/film-stills`
+	}
 }
-export const PUBLIC_PAGES = new PUBLIC()
+export const DASHBOARD_PAGES = new DASHBOARD()
