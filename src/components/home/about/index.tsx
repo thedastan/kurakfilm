@@ -1,4 +1,5 @@
 import { Box, Container, Flex, Stack } from '@chakra-ui/react'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -13,6 +14,7 @@ import { DASHBOARD_PAGES } from '@/config/pages-url.config'
 import useTypedLocale from '@/hooks/useLocale'
 
 const About = () => {
+	const t = useTranslations('About')
 	const locale = useTypedLocale()
 	const navigates = [
 		{
@@ -28,12 +30,37 @@ const About = () => {
 			path: DASHBOARD_PAGES.FILM_STILLS(locale)
 		}
 	]
+
+	const characteristics = (
+		<Stack
+			spacing='14px'
+			mt={{ md: '37px', base: '30px' }}
+		>
+			<Description
+				fontSize={{ md: '18px', base: '16px' }}
+				lineHeight={{ md: '28px', base: '18px' }}
+			>{`${t('Characteristics.chron')}: D`}</Description>
+			<Description
+				fontSize={{ md: '18px', base: '16px' }}
+				lineHeight={{ md: '28px', base: '18px' }}
+			>{`${t('Characteristics.language')}: ${t('Characteristics.2')}`}</Description>
+			<Description
+				fontSize={{ md: '18px', base: '16px' }}
+				lineHeight={{ md: '28px', base: '18px' }}
+			>{`${t('Characteristics.country')}: ${t('Characteristics.3')}`}</Description>
+			<Description
+				fontSize={{ md: '18px', base: '16px' }}
+				lineHeight={{ md: '28px', base: '18px' }}
+			>{`${t('Characteristics.age')}: 16+`}</Description>
+		</Stack>
+	)
 	return (
-		<Box mt='150px'>
+		<Box pt={{ md: '150px', base: '548px' }}>
 			<Container
 				maxW={CONTAINER_WIDTH}
 				className='about'
 				position='relative'
+				h={{ md: '651px', base: '810px' }}
 			>
 				<Box
 					position='absolute'
@@ -47,35 +74,39 @@ const About = () => {
 					zIndex='0'
 				/>
 				<Flex
-					padding={{ md: '23px', base: '0' }}
-					position='relative'
+					padding={{ md: '23px', base: '0 16px' }}
+					position={{ md: 'relative', base: 'absolute' }}
 					zIndex='1'
-					gap='142px'
-					alignItems='center'
+					gap={{ md: '142px', base: '30px' }}
+					alignItems={{ md: 'center', base: 'start' }}
+					flexDirection={{ md: 'row', base: 'column-reverse' }}
+					left='0'
+					w='100%'
+					bottom='42px'
 				>
-					<Box
-						w='561px'
-						h='605px'
-					>
-						<Image
-							src={AboutImage}
-							alt='Image'
-							width={561}
-							height={605}
-							objectFit='cover'
-							className='full-image'
-						/>
+					<Box>
+						<Box
+							// mt='-283px'
+							w={{ md: '561px', base: '100%' }}
+							h={{ md: '605px', base: '460px' }}
+						>
+							<Image
+								src={AboutImage}
+								alt='Image'
+								width={561}
+								height={605}
+								objectFit='cover'
+								className='full-image'
+							/>
+						</Box>
+						<Box display={{ md: 'none', base: 'block' }}>{characteristics}</Box>
 					</Box>
 
 					<Box maxW='480px'>
-						<TitleComponent whiteSpace='nowrap'>More about film</TitleComponent>
-						<Description mt='5'>
-							Based on true events, several stories about disempowerment of
-							women, are closely intertwined, affecting each other’s, unfolding
-							against the background of the traditional, patriarchal society of
-							modern-day Kyrgyzstan ultimately result in a series of tragic
-							outcomes.
-						</Description>
+						<TitleComponent whiteSpace={{ md: 'nowrap', base: 'wrap' }}>
+							{t('title')}
+						</TitleComponent>
+						<Description mt='5'>{t('description')}</Description>
 
 						<Flex
 							gap='10px'
@@ -101,15 +132,7 @@ const About = () => {
 								</Link>
 							))}
 						</Flex>
-						<Stack
-							spacing='14px'
-							mt='37px'
-						>
-							<Description>Chron: D</Description>
-							<Description>Language: Kyrgyz</Description>
-							<Description>Country of Origin: Kyrgyzstan</Description>
-							<Description>Age restrictions: 16+</Description>
-						</Stack>
+						<Box display={{ md: 'block', base: 'none' }}>{characteristics}</Box>
 					</Box>
 				</Flex>
 			</Container>

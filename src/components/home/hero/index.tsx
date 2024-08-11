@@ -1,4 +1,5 @@
 import { Box, Container, Heading } from '@chakra-ui/react'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
 import TrailerButton from '@/components/ui/buttons/TrailerButton'
@@ -15,11 +16,14 @@ import {
 } from '@/config/_variables.config'
 
 const Hero = () => {
+	const t = useTranslations('Hero')
 	return (
 		<Box
 			className='hero-home'
 			position='relative'
 			pt={{ md: HEADER_HEIGHT, base: MINI_HEADER_HEIGHT }}
+			h={{ md: '120vh', base: '527px' }}
+			mb={{ md: '0', base: '280px' }}
 		>
 			<Box
 				position='absolute'
@@ -38,29 +42,36 @@ const Hero = () => {
 					position='relative'
 					zIndex='1'
 					maxW='579px'
-					mt='116px'
+					mt={{ md: '116px', base: '368px' }}
 				>
-					<Image
-						src={Logo}
-						alt='Logo'
-					/>
+					<Box
+						maxW='376px'
+						w={{ md: '100%', base: '260px' }}
+					>
+						<Image
+							src={Logo}
+							alt='Logo'
+							className='full-image'
+						/>
+					</Box>
 					<Heading
-						mt='40px'
+						mt={{ md: '40px', base: '22px' }}
 						className={fjalla_one.className}
-						fontSize='34px'
+						fontSize={{ md: '34px', base: '30px' }}
 						textTransform='uppercase'
-						lineHeight='42.73px'
+						lineHeight={{ md: '42.73px', base: '37.71px' }}
 						color='#FFFFFF'
 						opacity='.8'
 					>
-						“THE BEST OF YOU ARE THOSE WHO ARE BEST TO THEIR WOMEN”
+						{t('description')}
 					</Heading>
 
 					<Description
-						mt='15px'
-						mb='48px'
+						mt={{ md: '15px', base: '5px' }}
+						fontSize={{ md: '18px', base: '14px' }}
+						mb={{ md: '48px', base: '30px' }}
 					>
-						Prophet Muhammad (ﷺ)
+						{t('subtitle')}
 					</Description>
 					<TrailerButton />
 				</Box>

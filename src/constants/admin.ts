@@ -2,8 +2,8 @@ export const PHONE_NUMBER = '+996705045005'
 
 export const WHATSAPP_NUMBER = PHONE_NUMBER
 
-export const EMAIL_ADDRESS = 'flowerburo1@gmail.com'
-export const INSTAGRAM = 'flowerburo.kg'
+export const EMAIL_ADDRESS = 'kurakfilmkg@gmail.com'
+export const INSTAGRAM = 'kurakfilmkg'
 
 export const LOCATION = 'Бишкек, Улица Ибраимова, 64/2'
 
@@ -14,7 +14,6 @@ export const WHATSAPP_LINK = `https://wa.me/${PHONE_NUMBER}`
 export const EMAIL_ADDRESS_LINK = `mailto:${EMAIL_ADDRESS}`
 
 export const INSTAGRAM_LINK = `https://instagram.com/${INSTAGRAM}`
-
 
 export const TELEGRAM_LINK = `https://t.me/+996705045005`
 

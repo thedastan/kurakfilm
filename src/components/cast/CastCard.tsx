@@ -3,6 +3,8 @@ import Image from 'next/image'
 
 import { ICast } from '@/types/cast.types'
 
+import YellowEllipse from '@/assets/svg/YellowEllipse'
+
 import { CONTAINER_WIDTH } from '@/config/_variables.config'
 
 import useTypedLocale from '@/hooks/useLocale'
@@ -20,7 +22,7 @@ const CastCard = ({ el, withBg }: { el: ICast; withBg: boolean }) => {
 				withBg ? `url("${el.image}") no-repeat center/cover` : 'transparent'
 			}
 			position='relative'
-			// overflow='hidden'
+			overflow='hidden'
 		>
 			{withBg && (
 				<Box
@@ -34,17 +36,17 @@ const CastCard = ({ el, withBg }: { el: ICast; withBg: boolean }) => {
 				/>
 			)}
 
-			{/* {!withBg && (
+			{!withBg && (
 				<Box
 					position='absolute'
-					right='0'
-					bottom='0'
+					right='-10%'
+					bottom='100%'
 					zIndex='0'
 					h='100%'
 				>
 					<YellowEllipse />
 				</Box>
-			)} */}
+			)}
 
 			<Container maxW={CONTAINER_WIDTH}>
 				<Flex

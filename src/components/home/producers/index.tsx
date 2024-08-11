@@ -7,21 +7,23 @@ import Link from 'next/link'
 import Description from '@/components/ui/texts/Description'
 import TitleComponent from '@/components/ui/texts/TitleComponent'
 
+import { PropsWithTitle } from '@/types/props.types'
+
 import { CONTAINER_WIDTH } from '@/config/_variables.config'
 
 import { useProducer } from '@/hooks/data-hooks'
 import useTypedLocale from '@/hooks/useLocale'
 
-const Producers = () => {
+const Producers = ({ title }: PropsWithTitle) => {
 	const { data, isLoading } = useProducer()
 	const locale = useTypedLocale()
 	return (
-		<Box mt='150px'>
+		<Box mt={{ md: '150px', base: '120px' }}>
 			<Container
 				maxW={CONTAINER_WIDTH}
 				px={{ md: '4', base: '0' }}
 			>
-				<TitleComponent px={{ md: '0', base: '4' }}>Producers</TitleComponent>
+				<TitleComponent px={{ md: '0', base: '4' }}>{title}</TitleComponent>
 				<Flex
 					mt='25px'
 					w='100%'

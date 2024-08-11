@@ -5,18 +5,22 @@ import Link from 'next/link'
 
 import TitleComponent from '@/components/ui/texts/TitleComponent'
 
+import { PropsWithTitle } from '@/types/props.types'
+
 import { CONTAINER_WIDTH } from '@/config/_variables.config'
 
 import { useCrew } from '@/hooks/data-hooks'
 import useTypedLocale from '@/hooks/useLocale'
 
-const FilmCrew = () => {
+const FilmCrew = ({ title }: PropsWithTitle) => {
 	const { data, isLoading } = useCrew()
 	const locale = useTypedLocale()
 	return (
-		<Box mt='160px'>
+		<Box mt={{ md: '160px', base: '78px' }}>
 			<Container maxW={CONTAINER_WIDTH}>
-				<TitleComponent textAlign='center'>film crew</TitleComponent>
+				<TitleComponent textAlign={{ md: 'center', base: 'start' }}>
+					{title}
+				</TitleComponent>
 
 				<Flex
 					flexWrap='wrap'

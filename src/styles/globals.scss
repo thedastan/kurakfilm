@@ -30,10 +30,16 @@
 
 .hero-home {
 	background: url('../assets/img/hero-bg.png') no-repeat center/cover;
-	min-height: 120vh;
 }
 
 .about {
 	background: url('../assets/img/about-rectangle.png') no-repeat center/cover;
-	min-height: 651px;
+}
+
+.still-hero {
+	background: url('../assets/img/about-rectangle.png') no-repeat left/cover;
+	// min-height: 664px;
+}
+.dream {
+	background: url('../assets/img/film-still2.png') no-repeat left/cover;
 }
