@@ -46,3 +46,12 @@ export function useNewsDetail(id: number) {
 
 	return { data, isLoading }
 }
+
+export function useGalley() {
+	const { data, isLoading } = useQuery({
+		queryKey: ['gallery'],
+		queryFn: () => filmService.getGalley()
+	})
+
+	return { data, isLoading }
+}

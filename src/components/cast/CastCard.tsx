@@ -1,11 +1,16 @@
-import { Box, Container, Flex } from '@chakra-ui/react'
+import { Box, Container, Flex, Text } from '@chakra-ui/react'
 import Image from 'next/image'
+import Link from 'next/link'
+import { FaInstagram } from 'react-icons/fa'
+
+import { poppins } from '@/constants/fonts'
 
 import { ICast } from '@/types/cast.types'
 
 import YellowEllipse from '@/assets/svg/YellowEllipse'
 
 import { CONTAINER_WIDTH } from '@/config/_variables.config'
+import { getInstaLink } from '@/config/helpers'
 
 import useTypedLocale from '@/hooks/useLocale'
 
@@ -14,6 +19,7 @@ import TitleComponent from '../ui/texts/TitleComponent'
 
 const CastCard = ({ el, withBg }: { el: ICast; withBg: boolean }) => {
 	const locale = useTypedLocale()
+
 	return (
 		<Flex
 			minH={withBg ? '555px' : '588px'}
@@ -81,6 +87,37 @@ const CastCard = ({ el, withBg }: { el: ICast; withBg: boolean }) => {
 							{el[`full_name_${locale}`]}
 						</TitleComponent>
 						<Description mt='10px'>{el[`info_${locale}`]}</Description>
+						<Link
+							href={getInstaLink(el.instagram)}
+							target='_blank'
+						>
+							<Flex
+								mt='18px'
+								gap='3'
+								alignItems='center'
+								className={poppins.className}
+							>
+								<Flex
+									justifyContent='center'
+									align='center'
+									w='43.5px'
+									h='43.5px'
+									rounded='50%'
+									bg='#282828'
+									fontSize='20px'
+								>
+									<FaInstagram color='#BDBDBD' />
+								</Flex>
+								<Text
+									fontSize='14px'
+									color='#CAC7C5'
+									lineHeight='19.6px'
+								>
+									{el.instagram}
+								</Text>
+							</Flex>
+						</Link>
+
 						<Description mt='33px'>{el[`description_${locale}`]}</Description>
 					</Box>
 				</Flex>

@@ -1,0 +1,25 @@
+.mySwiper {
+	position: relative;
+	position: relative;
+
+	.swiper-pagination {
+		position: absolute;
+		top: 0 !important;
+		left: 0 !important;
+		justify-content: center !important;
+		width: 100% !important;
+		span {
+			width: 7.62px;
+			height: 7.62px;
+			background: transparent !important;
+			border: 0.76px solid #cac7c5;
+			border-radius: 2.29px;
+			margin: 0 5px !important;
+		}
+		.swiper-pagination-bullet-active {
+			width: 20px;
+			height: 8px;
+			background: #cac7c5 !important;
+		}
+	}
+}

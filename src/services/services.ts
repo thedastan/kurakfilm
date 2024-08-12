@@ -1,6 +1,7 @@
 import { ICast } from '@/types/cast.types'
 import { ICrew } from '@/types/crew.types'
 import { INews } from '@/types/news.types'
+import { IGalley } from '@/types/other.types'
 import { IProducer } from '@/types/producer.types'
 
 import { PUBLIC_API } from '@/api/interceptors'
@@ -38,6 +39,12 @@ class FilmServices {
 		const response = await PUBLIC_API.get<INews[]>(
 			this.BASE_URL + `news/view/${id}/`
 		)
+
+		return response.data
+	}
+
+	async getGalley() {
+		const response = await PUBLIC_API.get<IGalley[]>(this.BASE_URL + `gallery/`)
 
 		return response.data
 	}

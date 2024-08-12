@@ -28,3 +28,8 @@ export const sharePageLink = () => {
 		})
 	}
 }
+
+export function getInstaLink(nickname: string) {
+	const nick = nickname.at(0) === '@' ? nickname.slice(1) : nickname
+	return `https://instagram.com/${nick}/`
+}
