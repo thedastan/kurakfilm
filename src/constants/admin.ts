@@ -14,6 +14,8 @@ export const WHATSAPP_LINK = `https://wa.me/${PHONE_NUMBER}`
 export const EMAIL_ADDRESS_LINK = `mailto:${EMAIL_ADDRESS}`
 
 export const INSTAGRAM_LINK = `https://instagram.com/${INSTAGRAM}`
+export const FACEBOOK_LINK = ``
+export const YOUTUBE_LINK = ``
 
 export const TELEGRAM_LINK = `https://t.me/+996705045005`
 

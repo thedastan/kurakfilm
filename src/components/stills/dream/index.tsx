@@ -10,22 +10,24 @@ const Dream = () => {
 	const t = useTranslations('film_stills')
 	return (
 		<Box
-			mt='180px'
+			mt={{ md: '180px', base: '60px' }}
 			className='dream'
 		>
 			<Container maxW='container.xl'>
 				<Flex
 					w='100%'
-					minH='708px'
-					justifyContent='end'
-					alignItems='center'
+					minH={{ md: '708px', base: '523px' }}
+					justifyContent={{ md: 'end', base: 'center' }}
+					alignItems={{ md: 'center', base: 'end' }}
 				>
 					<Flex
-						alignItems='center'
-						gap='65px'
+						alignItems={{ md: 'center', base: 'start' }}
+						gap={{ md: '65px', base: '0' }}
+						flexDirection={{ md: 'row', base: 'column' }}
+						mb='-138px'
 					>
 						<Box
-							w='379px'
+							w={{ sm: '379px', base: '100%' }}
 							h='314.37px'
 						>
 							<Image
@@ -35,7 +37,12 @@ const Dream = () => {
 							/>
 						</Box>
 
-						<Description maxW='338px'>{t('description')}</Description>
+						<Description
+							mt='-64px'
+							maxW='338px'
+						>
+							{t('description')}
+						</Description>
 					</Flex>
 				</Flex>
 			</Container>

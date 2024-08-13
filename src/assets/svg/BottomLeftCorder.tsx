@@ -6,8 +6,8 @@ const BottomLeftCorder = () => {
 			position='absolute'
 			bottom='0'
 			left='0'
-			w='48px'
-			h='43px'
+			w={{ md: '48px', base: '19.46px' }}
+			h={{ md: '43px', base: '17.57px' }}
 		>
 			<svg
 				width='100%'

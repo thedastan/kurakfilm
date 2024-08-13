@@ -97,9 +97,11 @@ const StillHeroClient = ({ query, title }: StillHeroClientProps) => {
 						[...data, ...data].map(el => (
 							<Box
 								key={el.id}
-								// onMouseOver={() => setImage(el.image)}
-								w='205.88px'
-								h='126.39px'
+								onMouseOver={() => setImage(el.image)}
+								onMouseLeave={() => setImage('')}
+								onClick={() => setImage(el.image)}
+								w={{ md: '205.88px', base: '107.51px' }}
+								h={{ md: '126.39px', base: '69.29px' }}
 								cursor='pointer'
 								_active={{ opacity: '.8' }}
 							>

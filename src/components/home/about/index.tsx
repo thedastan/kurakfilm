@@ -15,18 +15,19 @@ import useTypedLocale from '@/hooks/useLocale'
 
 const About = () => {
 	const t = useTranslations('About')
+	const t_nav = useTranslations('Navbar.Main')
 	const locale = useTypedLocale()
 	const navigates = [
 		{
-			name: 'Cast >',
+			name: `${t_nav('cast_actors')} >`,
 			path: DASHBOARD_PAGES.ACTORS(locale)
 		},
 		{
-			name: 'Backstages >',
+			name: `${t_nav('backstage')} >`,
 			path: DASHBOARD_PAGES.BACKSTAGE(locale)
 		},
 		{
-			name: 'Film stills >',
+			name: `${t_nav('film_stills')} >`,
 			path: DASHBOARD_PAGES.FILM_STILLS(locale)
 		}
 	]
@@ -77,7 +78,7 @@ const About = () => {
 					padding={{ md: '23px', base: '0 16px' }}
 					position={{ md: 'relative', base: 'absolute' }}
 					zIndex='1'
-					gap={{ md: '142px', base: '30px' }}
+					gap={{ '2xl': '142px', md: '50px', base: '30px' }}
 					alignItems={{ md: 'center', base: 'start' }}
 					flexDirection={{ md: 'row', base: 'column-reverse' }}
 					left='0'
@@ -86,7 +87,6 @@ const About = () => {
 				>
 					<Box>
 						<Box
-							// mt='-283px'
 							w={{ md: '561px', base: '100%' }}
 							h={{ md: '605px', base: '460px' }}
 						>
@@ -102,35 +102,38 @@ const About = () => {
 						<Box display={{ md: 'none', base: 'block' }}>{characteristics}</Box>
 					</Box>
 
-					<Box maxW='480px'>
-						<TitleComponent whiteSpace={{ md: 'nowrap', base: 'wrap' }}>
-							{t('title')}
-						</TitleComponent>
+					<Box maxW={{ md: '480px', base: '100%' }}>
+						<TitleComponent>{t('title')}</TitleComponent>
 						<Description mt='5'>{t('description')}</Description>
 
 						<Flex
-							gap='10px'
 							mt='30px'
+							overflowX='auto'
+							className='unscroll'
+							w='100%'
 						>
-							{navigates.map((el, idx) => (
-								<Link
-									href={el.path}
-									key={idx}
-								>
-									<Flex
-										px='25px'
-										py='2'
-										rounded='100px'
-										bg='#FFFFFF1F'
-										fontWeight='500'
-										fontSize='14.13px'
-										lineHeight='28.26px'
-										color='#CAC7C5'
+							<Flex gap='10px'>
+								{navigates.map((el, idx) => (
+									<Link
+										href={el.path}
+										key={idx}
 									>
-										{el.name}
-									</Flex>
-								</Link>
-							))}
+										<Flex
+											px='5'
+											py='2'
+											rounded='100px'
+											bg='#FFFFFF1F'
+											fontWeight='500'
+											fontSize='14.13px'
+											lineHeight='28.26px'
+											color='#CAC7C5'
+											whiteSpace='nowrap'
+										>
+											{el.name}
+										</Flex>
+									</Link>
+								))}
+							</Flex>
 						</Flex>
 						<Box display={{ md: 'block', base: 'none' }}>{characteristics}</Box>
 					</Box>

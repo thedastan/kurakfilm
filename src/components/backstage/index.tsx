@@ -2,6 +2,7 @@
 
 import { Box, Container, Flex } from '@chakra-ui/react'
 import Image from 'next/image'
+import { PropsWithChildren } from 'react'
 
 import { PropsWithTitle } from '@/types/props.types'
 
@@ -19,28 +20,16 @@ const Backstage = ({ title }: PropsWithTitle) => {
 	return (
 		<Box pt='47px'>
 			<Container maxW='container.lg'>
-				<TitleComponent textAlign='center'>{title}</TitleComponent>
-				<Flex
-					justifyContent='center'
-					mt='47px'
-					p='20px'
-					w='942.5px'
-					position='relative'
+				<TitleComponent
+					textAlign={{ md: 'center', base: 'start' }}
+					mb={{ md: '47px', base: '30px' }}
 				>
-					<TopLeftCorner />
-					<TopRightCorner />
-					<BottomLeftCorder />
-					<BottomRightCorner />
-					<iframe
-						src='https://drive.google.com/file/d/1f3hdrcsq3sA0sNyKEMdw-O7sFc466nwv/preview'
-						width='100%'
-						height='481'
-						allow='autoplay'
-					></iframe>
-				</Flex>
+					{title}
+				</TitleComponent>
+				<Frame link='https://drive.google.com/file/d/1f3hdrcsq3sA0sNyKEMdw-O7sFc466nwv/preview' />
 			</Container>
 			<Flex
-				my='95px'
+				my={{ md: '95px', base: '60px' }}
 				w='100%'
 				overflowX='auto'
 				className='unscroll'
@@ -65,26 +54,33 @@ const Backstage = ({ title }: PropsWithTitle) => {
 				</Flex>
 			</Flex>
 			<Container maxW='container.lg'>
-				<Flex
-					justifyContent='center'
-					p='20px'
-					w='942.5px'
-					position='relative'
-				>
-					<TopLeftCorner />
-					<TopRightCorner />
-					<BottomLeftCorder />
-					<BottomRightCorner />
-					<iframe
-						src='https://drive.google.com/file/d/1f3hdrcsq3sA0sNyKEMdw-O7sFc466nwv/preview'
-						width='100%'
-						height='481'
-						allow='autoplay'
-					></iframe>
-				</Flex>
+				<Frame link='https://drive.google.com/file/d/1f3hdrcsq3sA0sNyKEMdw-O7sFc466nwv/preview' />
 			</Container>
 		</Box>
 	)
 }
 
+export function Frame({ link }: { link: string }) {
+	return (
+		<Flex
+			justifyContent='center'
+			p={{ md: '20px', base: '8.5px' }}
+			maxW='942.5px'
+			w='100%'
+			position='relative'
+			h={{ md: '481px', sm: '350px', base: '218px' }}
+		>
+			<TopLeftCorner />
+			<TopRightCorner />
+			<BottomLeftCorder />
+			<BottomRightCorner />
+			<iframe
+				src={link}
+				width='100%'
+				height='100%'
+				allow='autoplay'
+			></iframe>
+		</Flex>
+	)
+}
 export default Backstage

@@ -1,6 +1,6 @@
 'use client'
 
-import { Box, Container, Flex } from '@chakra-ui/react'
+import { Box, ChakraProps, Container, Flex } from '@chakra-ui/react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -18,7 +18,7 @@ import LogoLine from '@/assets/img/logo-line.svg'
 
 import { CONTAINER_WIDTH } from '@/config/_variables.config'
 
-import { IHeaderNav } from '../data'
+import { IHeaderNav, social_contact } from '../data'
 
 interface FooterClientCompProps {
 	header_nav: IHeaderNav[]
@@ -33,13 +33,14 @@ const FooterClientComp = ({
 	const pathname = usePathname()
 	return (
 		<Box
+			id='footer'
 			pt={{ md: '130px', base: '100px' }}
 			pb={{ md: '51px', base: '14px' }}
 		>
 			<Container maxW={CONTAINER_WIDTH}>
 				<Flex
 					bg={{ md: '#282828', base: 'transparent' }}
-					h={{ md: '208px', base: 'auto' }}
+					// h={{ md: '210px', base: 'auto' }}
 					p='2px'
 					gap='2px'
 					flexDirection={{ md: 'row', base: 'column' }}
@@ -143,7 +144,7 @@ const FooterClientComp = ({
 						</Flex>
 						<Flex
 							display={{ md: 'none', base: 'flex' }}
-							mt='120px'
+							mt='60px'
 							justifyContent='center'
 							textAlign='center'
 							alignItems='center'
@@ -159,22 +160,16 @@ const FooterClientComp = ({
 								{collaboration}
 							</Description>
 						</Flex>
+						<SocialContacts display={{ md: 'none', base: 'flex' }} />
 						<Flex
-							mt='120px'
+							mt={{ md: '0', base: '120px' }}
 							gap='2px'
 							h={{ md: '104px', base: 'auto' }}
 							flexDirection={{ md: 'row', base: 'column' }}
 							alignItems='center'
 							textAlign={{ md: 'start', base: 'start' }}
 						>
-							<Flex
-								px='5'
-								alignItems='center'
-								justifyContent='center'
-								bg='#050505'
-								w={{ md: '34%', base: '100%' }}
-								h={{ md: '100%', base: 'auto' }}
-							></Flex>
+							<SocialContacts display={{ md: 'flex', base: 'none' }} />
 							<Flex
 								px='5'
 								alignItems='center'
@@ -201,7 +196,7 @@ const FooterClientComp = ({
 								bg='#050505'
 								w={{ md: '34%', base: '100%' }}
 								h={{ md: '100%', base: 'auto' }}
-								mt={{ md: '0', base: '124px' }}
+								mt={{ md: '0', base: '80px' }}
 							>
 								<Description
 									fontSize={{ md: '14px', base: '10px' }}
@@ -228,6 +223,42 @@ const FooterClientComp = ({
 				</Flex>
 			</Container>
 		</Box>
+	)
+}
+
+function SocialContacts({ display }: ChakraProps) {
+	return (
+		<Flex
+			display={display}
+			mt={{ md: '0', base: '5' }}
+			px='5'
+			alignItems='center'
+			justifyContent='center'
+			bg='#050505'
+			w={{ md: '34%', base: '100%' }}
+			h={{ md: '100%', base: 'auto' }}
+			gap='19.28px'
+		>
+			{social_contact.map((el, idx) => (
+				<Link
+					href={el.path}
+					key={idx}
+					target='_blank'
+				>
+					<Flex
+						w='43.38px'
+						h='43.38px'
+						justifyContent='center'
+						alignItems='center'
+						bg='#282828'
+						rounded='50%'
+						fontSize='18px'
+					>
+						<el.icon color='#BDBDBD' />
+					</Flex>
+				</Link>
+			))}
+		</Flex>
 	)
 }
 

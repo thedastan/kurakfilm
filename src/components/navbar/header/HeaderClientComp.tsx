@@ -1,6 +1,6 @@
 'use client'
 
-import { Container, Flex, Text } from '@chakra-ui/react'
+import { Box, Container, Flex, Text } from '@chakra-ui/react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
@@ -18,6 +18,7 @@ import useTypedLocale from '@/hooks/useLocale'
 import { IHeaderNav } from '../data'
 
 import LanguageSelect from './LanguageSelect'
+import NavbarSelect from './NavbarSelect'
 
 interface HeaderClientCompProps {
 	header_nav: IHeaderNav[]
@@ -57,7 +58,11 @@ const HeaderClientComp = ({
 					h='24px'
 					justifyContent='space-between'
 					alignItems='center'
+					gap='7'
 				>
+					<Box display={{ md: 'none', base: 'block' }}>
+						<NavbarSelect header_nav={header_nav} />
+					</Box>
 					<Flex
 						display={{ md: 'flex', base: 'none' }}
 						gap='27px'

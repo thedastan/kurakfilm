@@ -11,15 +11,16 @@ import Image2 from '@/assets/img/film-still5.png'
 const VirginGirl = () => {
 	const t = useTranslations('film_stills')
 	return (
-		<Box mt='180px'>
+		<Box mt={{ md: '180px', base: '180px' }}>
 			<Container maxW='container.lg'>
 				<Flex
-					gap='27px'
-					alignItems='end'
+					gap={{ md: '27px', base: '60px' }}
+					alignItems={{ lg: 'end', base: 'start' }}
+					flexDirection={{ lg: 'row', base: 'column' }}
 				>
 					<Box
-						minW='538px'
-						h='308px'
+						minW={{ md: '538px', base: '100%' }}
+						h={{ md: '308px', base: 'auto' }}
 					>
 						<Image
 							src={Image1}
@@ -33,8 +34,8 @@ const VirginGirl = () => {
 					</Box>
 				</Flex>
 				<Box
-					mt='36px'
-					h='481px'
+					mt={{ md: '36px', base: '60px' }}
+					h={{ md: '481px', base: 'auto' }}
 					w='100%'
 				>
 					<Image

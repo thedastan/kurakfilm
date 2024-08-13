@@ -73,7 +73,7 @@ const Hero = () => {
 					>
 						{t('subtitle')}
 					</Description>
-					<TrailerButton />
+					<TrailerButton title={t('button')} />
 				</Box>
 			</Container>
 		</Box>
