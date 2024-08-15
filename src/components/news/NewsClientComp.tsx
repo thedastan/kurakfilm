@@ -44,7 +44,7 @@ const NewsClientComp = ({ title }: PropsWithTitle) => {
 							<Flex
 								p='4'
 								gap='4'
-								bg='#FFFFFF'
+								bg='#050505'
 								boxShadow='0px 30px 60px 0px #20385526'
 								alignItems='start'
 								_hover={{ textDecoration: 'underline' }}
@@ -65,7 +65,7 @@ const NewsClientComp = ({ title }: PropsWithTitle) => {
 								<Box>
 									<Description
 										noOfLines={2}
-										color='#000000'
+										color='#FFFFFF'
 									>
 										{el[`description_${locale}`]}
 									</Description>
@@ -73,7 +73,7 @@ const NewsClientComp = ({ title }: PropsWithTitle) => {
 										mt='2'
 										justifyContent='end'
 										alignItems='center'
-										color='#000000'
+										color='#FFFFFF'
 										opacity='.6'
 										gap='5'
 									>

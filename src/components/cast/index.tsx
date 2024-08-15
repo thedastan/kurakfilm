@@ -3,7 +3,7 @@
 import { Box } from '@chakra-ui/react'
 import 'swiper/css'
 import 'swiper/css/effect-fade'
-import { Autoplay, EffectFade, Pagination } from 'swiper/modules'
+import { Autoplay, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/scss/navigation'
 import 'swiper/scss/pagination'
@@ -43,6 +43,11 @@ const Cast = () => {
 				display={{ md: 'none', base: 'block' }}
 				position='relative'
 			>
+				{/* {data?.map(el => (
+					<SwiperSlide key={el.id}>
+						<CastResponsiveCard el={el} />
+					</SwiperSlide>
+				))} */}
 				<Swiper
 					spaceBetween={50}
 					slidesPerView={1}

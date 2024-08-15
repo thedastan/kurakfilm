@@ -89,14 +89,16 @@ const HeaderClientComp = ({
 						gap='30px'
 						alignItems='center'
 					>
-						<Text
-							fontWeight='400'
-							fontSize='14px'
-							color='#FFFFFF'
-							lineHeight='19.6px'
-						>
-							{contact_btn}
-						</Text>
+						<Link href={'#footer'}>
+							<Text
+								fontWeight='400'
+								fontSize='14px'
+								color='#FFFFFF'
+								lineHeight='19.6px'
+							>
+								{contact_btn}
+							</Text>
+						</Link>
 						<LanguageSelect />
 					</Flex>
 				</Flex>

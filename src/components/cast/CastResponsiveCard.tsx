@@ -64,6 +64,8 @@ const CastResponsiveCard = ({ el }: { el: ICast }) => {
 						gap='3'
 						alignItems='center'
 						className={poppins.className}
+						position='relative'
+						zIndex='100'
 					>
 						<Flex
 							justifyContent='center'
