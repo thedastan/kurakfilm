@@ -1,6 +1,6 @@
-import { ChakraProps, Heading } from '@chakra-ui/react'
+import { ChakraProps, Text } from '@chakra-ui/react'
 
-import { fjalla_one } from '@/constants/fonts'
+import { oswald } from '@/constants/fonts'
 
 interface Props extends ChakraProps {
 	children: string
@@ -13,19 +13,18 @@ const TitleComponent = ({
 	...props
 }: Props) => {
 	return (
-		<Heading
-			className={fjalla_one.className}
+		<Text
 			as='h1'
 			{...props}
+			className={oswald.className}
 			color={color}
 			fontWeight='400'
 			lineHeight={lineHeight}
 			textTransform='uppercase'
-			letterSpacing='-1px'
 			fontSize={fontSize}
 		>
 			{children}
-		</Heading>
+		</Text>
 	)
 }
 

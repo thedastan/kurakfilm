@@ -53,9 +53,7 @@ const Backstage = ({ title }: PropsWithTitle) => {
 					))}
 				</Flex>
 			</Flex>
-			<Container maxW='container.lg'>
-				<Frame link='https://drive.google.com/file/d/1f3hdrcsq3sA0sNyKEMdw-O7sFc466nwv/preview' />
-			</Container>
+		
 		</Box>
 	)
 }

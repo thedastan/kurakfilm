@@ -10,7 +10,7 @@ import { usePathname, useRouter } from 'next/navigation'
 import { AiOutlineCheck } from 'react-icons/ai'
 import { IoChevronDown } from 'react-icons/io5'
 
-import { poppins } from '@/constants/fonts'
+import { inter, poppins } from '@/constants/fonts'
 
 import { IntlType } from '@/types/intl.types'
 
@@ -33,13 +33,11 @@ const LanguageSelect = () => {
 				<Flex
 					alignItems='center'
 					cursor='pointer'
-					className={poppins.className}
 					gap='9px'
-					h='24px'
 					color='#FFFFFF'
 					fontWeight='500'
-					fontSize='15.75px'
-					lineHeight='22.05px'
+					fontSize='16px'
+					lineHeight='19.6px'
 				>
 					{current_locale?.short_name}
 					<IoChevronDown />
@@ -51,6 +49,7 @@ const LanguageSelect = () => {
 				bg='#FFFFFF'
 				boxShadow='0px 8px 24px -6px #00000029'
 				padding='4px 4px 4px 9px'
+				className={inter.className}
 			>
 				{locales_data.map((el, idx) => (
 					<MenuItem

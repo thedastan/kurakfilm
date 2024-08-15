@@ -17,7 +17,7 @@ const Description = ({
 			color={color}
 			fontWeight={fontWeight}
 			lineHeight={lineHeight}
-			fontSize={fontSize}
+			fontSize={{ md: '16px', base: '14px' }}
 			{...props}
 		>
 			{children}

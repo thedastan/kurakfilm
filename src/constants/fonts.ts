@@ -1,8 +1,14 @@
-import { Fjalla_One, Inter, Poppins } from 'next/font/google'
+import { Fjalla_One, Inter, Oswald, Poppins } from 'next/font/google'
 
 export const poppins = Poppins({
 	subsets: ['latin', 'latin-ext'],
 	weight: ['300', '400', '500', '600', '700', '800', '900'],
+	display: 'swap'
+})
+
+export const oswald = Oswald({
+	subsets: ['latin', 'latin-ext'],
+	weight: ['300', '400', '500', '600', '700'],
 	display: 'swap'
 })
 

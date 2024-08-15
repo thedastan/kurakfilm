@@ -5,7 +5,7 @@ import { Toaster } from 'sonner'
 import Footer from '@/components/navbar/footer'
 import Header from '@/components/navbar/header'
 
-import { inter } from '@/constants/fonts'
+import { fjalla_one, inter } from '@/constants/fonts'
 import { SITE_NAME } from '@/constants/seo.constants'
 
 import { Providers } from '../providers'
@@ -34,7 +34,7 @@ export default function RootLayout({
 }: Readonly<RootLayoutProps>) {
 	return (
 		<html lang={locale}>
-			<body className={inter.className}>
+			<body className={fjalla_one.className}>
 				<ChakraProvider>
 					<Providers>
 						<Header />

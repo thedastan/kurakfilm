@@ -4,17 +4,13 @@ import { Box, Flex } from '@chakra-ui/react'
 import Image from 'next/image'
 import { useState } from 'react'
 
-import Description from '@/components/ui/texts/Description'
 import TitleComponent from '@/components/ui/texts/TitleComponent'
+
+import { PropsWithTitle } from '@/types/props.types'
 
 import { useGalley } from '@/hooks/data-hooks'
 
-interface StillHeroClientProps {
-	title: string
-	query: string
-}
-
-const StillHeroClient = ({ query, title }: StillHeroClientProps) => {
+const StillHeroClient = ({ title }: PropsWithTitle) => {
 	const { data, isLoading } = useGalley()
 	const [image, setImage] = useState('')
 	return (
@@ -78,12 +74,6 @@ const StillHeroClient = ({ query, title }: StillHeroClientProps) => {
 						textAlign='center'
 					>
 						<TitleComponent>{title}</TitleComponent>
-						<Description
-							mt='9px'
-							maxW='400px'
-						>
-							{query}
-						</Description>
 					</Flex>
 				</Flex>
 			</Box>
@@ -94,7 +84,7 @@ const StillHeroClient = ({ query, title }: StillHeroClientProps) => {
 			>
 				<Flex>
 					{!!data &&
-						[...data, ...data].map(el => (
+						data.map(el => (
 							<Box
 								key={el.id}
 								onMouseOver={() => setImage(el.image)}

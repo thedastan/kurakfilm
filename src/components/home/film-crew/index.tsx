@@ -55,19 +55,19 @@ const FilmCrew = ({ title }: PropsWithTitle) => {
 									/>
 									<Box color='#FFFFFF'>
 										<Text
-											fontWeight='600'
-											fontSize='20px'
-											lineHeight='22.8px'
-										>
-											{el[`full_name_${locale}`]}
-										</Text>
-										<Text
-											mt='2'
 											opacity='.8'
 											fontSize='16px'
 											lineHeight='18.24px'
 										>
 											{el[`info_${locale}`]}
+										</Text>
+										<Text
+											mt='2'
+											fontWeight='500'
+											fontSize='20px'
+											lineHeight='22.8px'
+										>
+											{el[`full_name_${locale}`]}
 										</Text>
 									</Box>
 								</Flex>

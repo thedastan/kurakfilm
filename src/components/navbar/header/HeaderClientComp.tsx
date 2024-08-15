@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
-import { poppins } from '@/constants/fonts'
+import { fjalla_one, poppins } from '@/constants/fonts'
 
 import {
 	CONTAINER_WIDTH,
@@ -66,7 +66,6 @@ const HeaderClientComp = ({
 					<Flex
 						display={{ md: 'flex', base: 'none' }}
 						gap='27px'
-						className={poppins.className}
 					>
 						{header_nav.map((el, idx) => (
 							<Link
@@ -74,8 +73,9 @@ const HeaderClientComp = ({
 								key={idx}
 							>
 								<Text
+									textTransform='uppercase'
 									fontWeight='400'
-									fontSize='14px'
+									fontSize='16px'
 									color='#FFFFFF'
 									lineHeight='19.6px'
 									textDecoration={pathname === el.path ? 'underline' : 'none'}
@@ -91,8 +91,9 @@ const HeaderClientComp = ({
 					>
 						<Link href={'#footer'}>
 							<Text
+								textTransform='uppercase'
 								fontWeight='400'
-								fontSize='14px'
+								fontSize='16px'
 								color='#FFFFFF'
 								lineHeight='19.6px'
 							>

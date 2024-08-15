@@ -22,27 +22,25 @@ const CastCard = ({ el, withBg }: { el: ICast; withBg: boolean }) => {
 
 	return (
 		<Flex
-			minH={withBg ? '555px' : '588px'}
+			minH={'555px'}
 			alignItems='center'
-			background={
-				withBg ? `url("${el.image}") no-repeat center/cover` : 'transparent'
-			}
+			background={`url("${el.image}") no-repeat center`}
 			position='relative'
 			overflow='hidden'
 		>
-			{withBg && (
-				<Box
-					bg='#000000B2'
-					position='absolute'
-					left='0'
-					top='0'
-					w='100%'
-					h='100%'
-					zIndex='0'
-				/>
-			)}
+			{/* {withBg && ( */}
+			<Box
+				bg='#000000B2'
+				position='absolute'
+				left='0'
+				top='0'
+				w='100%'
+				h='100%'
+				zIndex='0'
+			/>
+			{/* )} */}
 
-			{!withBg && (
+			{/* {!withBg && (
 				<Box
 					position='absolute'
 					right='-10%'
@@ -52,7 +50,7 @@ const CastCard = ({ el, withBg }: { el: ICast; withBg: boolean }) => {
 				>
 					<YellowEllipse />
 				</Box>
-			)}
+			)} */}
 
 			<Container maxW={CONTAINER_WIDTH}>
 				<Flex
@@ -65,6 +63,7 @@ const CastCard = ({ el, withBg }: { el: ICast; withBg: boolean }) => {
 				>
 					<Box
 						minW='347px'
+						maxW='347px'
 						h='347px'
 						rounded='50%'
 						overflow='hidden'

@@ -4,12 +4,7 @@ import StillHeroClient from './StillHeroClient'
 
 const StillHero = () => {
 	const t = useTranslations('film_stills')
-	return (
-		<StillHeroClient
-			query={t('query')}
-			title={t('title')}
-		/>
-	)
+	return <StillHeroClient title={t('title')} />
 }
 
 export default StillHero

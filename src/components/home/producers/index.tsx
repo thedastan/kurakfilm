@@ -38,7 +38,7 @@ const Producers = ({ title }: PropsWithTitle) => {
 							<Box
 								key={el.id}
 								w='300px'
-								h='371px'
+								minH='371px'
 							>
 								<Box
 									w='100%'
@@ -69,7 +69,7 @@ const Producers = ({ title }: PropsWithTitle) => {
 										/>
 										<Box color='#FFFFFF'>
 											<Text
-												fontWeight='600'
+												fontWeight='500'
 												fontSize='18px'
 												lineHeight='20.52px'
 											>

@@ -39,17 +39,9 @@ const About = () => {
 
 	const characteristics = (
 		<Stack
-			spacing='14px'
+			spacing='6px'
 			mt={{ md: '37px', base: '30px' }}
 		>
-			<Description
-				fontSize={{ md: '18px', base: '16px' }}
-				lineHeight={{ md: '28px', base: '18px' }}
-			>{`${t('Characteristics.chron')}: D`}</Description>
-			<Description
-				fontSize={{ md: '18px', base: '16px' }}
-				lineHeight={{ md: '28px', base: '18px' }}
-			>{`${t('Characteristics.language')}: ${t('Characteristics.2')}`}</Description>
 			<Description
 				fontSize={{ md: '18px', base: '16px' }}
 				lineHeight={{ md: '28px', base: '18px' }}
@@ -57,28 +49,40 @@ const About = () => {
 			<Description
 				fontSize={{ md: '18px', base: '16px' }}
 				lineHeight={{ md: '28px', base: '18px' }}
+			>{`${t('Characteristics.language')}: ${t('Characteristics.2')}`}</Description>
+			<Description
+				fontSize={{ md: '18px', base: '16px' }}
+				lineHeight={{ md: '28px', base: '18px' }}
 			>{`${t('Characteristics.age')}: 16+`}</Description>
+			<Description
+				fontSize={{ md: '18px', base: '16px' }}
+				lineHeight={{ md: '28px', base: '18px' }}
+			>{`${t('Characteristics.chron')}: D`}</Description>
 		</Stack>
 	)
 	return (
-		<Box pt={{ md: '150px', base: '548px' }}>
+		<Box
+			// pt={{ md: '150px', base: '548px' }}
+			className='about'
+			position='relative'
+		>
+			<Box
+				position='absolute'
+				top='0'
+				left='0'
+				right='0'
+				bottom='0'
+				w='100%'
+				h='100%'
+				bg='radial-gradient(67.84% 67.84% at 50% 50%, rgba(0, 0, 0, 0) 0%, #000000 100%)'
+				zIndex='0'
+			/>
 			<Container
 				maxW={CONTAINER_WIDTH}
-				className='about'
+				// className='about'
 				position='relative'
 				h={{ md: '651px', base: '810px' }}
 			>
-				<Box
-					position='absolute'
-					top='0'
-					left='0'
-					right='0'
-					bottom='0'
-					w='100%'
-					h='100%'
-					bg='linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 71.76%)'
-					zIndex='0'
-				/>
 				<Flex
 					padding={{ md: '23px', base: '0 16px' }}
 					position={{ md: 'relative', base: 'absolute' }}
@@ -93,13 +97,13 @@ const About = () => {
 					<Box>
 						<Box position='relative'>
 							<Box
-								w={{ md: '561px', base: '100%' }}
+								w={{ md: '461px', base: '100%' }}
 								h={{ md: '605px', base: 'auto' }}
 							>
 								<Image
 									src={AboutImage}
 									alt='Image'
-									width={561}
+									width={461}
 									height={605}
 									objectFit='cover'
 									className='full-image'
@@ -202,7 +206,7 @@ const About = () => {
 						<Box display={{ md: 'none', base: 'block' }}>{characteristics}</Box>
 					</Box>
 
-					<Box maxW={{ md: '480px', base: '100%' }}>
+					<Box maxW={{ md: '580px', base: '100%' }}>
 						<TitleComponent>{t('title')}</TitleComponent>
 						<Description mt='5'>{t('description')}</Description>
 

@@ -1,11 +1,11 @@
-import { Box, Container, Heading } from '@chakra-ui/react'
+import { Box, Container, Heading, Text } from '@chakra-ui/react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
 import TrailerButton from '@/components/ui/buttons/TrailerButton'
 import Description from '@/components/ui/texts/Description'
 
-import { fjalla_one } from '@/constants/fonts'
+import { fjalla_one, oswald } from '@/constants/fonts'
 
 import Logo from '@/assets/img/hero-logo.svg'
 
@@ -54,9 +54,9 @@ const Hero = () => {
 							className='full-image'
 						/>
 					</Box>
-					<Heading
+					<Text
+						// className={oswald.className}
 						mt={{ md: '40px', base: '22px' }}
-						className={fjalla_one.className}
 						fontSize={{ md: '34px', base: '30px' }}
 						textTransform='uppercase'
 						lineHeight={{ md: '42.73px', base: '37.71px' }}
@@ -64,7 +64,7 @@ const Hero = () => {
 						opacity='.8'
 					>
 						{t('description')}
-					</Heading>
+					</Text>
 
 					<Description
 						mt={{ md: '15px', base: '5px' }}
