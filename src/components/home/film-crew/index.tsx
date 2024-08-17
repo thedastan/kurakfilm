@@ -1,6 +1,6 @@
 'use client'
 
-import { Avatar, Box, Container, Flex, Text } from '@chakra-ui/react'
+import { Avatar, Box, Container, Flex, Stack, Text } from '@chakra-ui/react'
 import Link from 'next/link'
 
 import TitleComponent from '@/components/ui/texts/TitleComponent'
@@ -25,6 +25,7 @@ const FilmCrew = ({ title }: PropsWithTitle) => {
 				<Flex
 					flexWrap='wrap'
 					justifyContent='center'
+					alignItems='start'
 					gap='5'
 					mt='40px'
 				>
@@ -32,8 +33,56 @@ const FilmCrew = ({ title }: PropsWithTitle) => {
 						<Box
 							maxW={{ lg: '416px', md: '47%', sm: '80%', base: '100%' }}
 							w='100%'
+							bg='#FFFFFF1A'
+							borderBottom='1.12px solid #000000'
+							py='15px'
+							px={{ lg: '30px', base: '4' }}
+							rounded='3px'
 						>
-							<Link
+							<Text
+								opacity='.8'
+								fontSize='16px'
+								lineHeight='18.24px'
+								color='#FFFFFF'
+							>
+								{el[`info_${locale}`]}
+							</Text>
+
+							<Stack
+								spacing='3'
+								mt={{ md: '5', base: '4' }}
+							>
+								{el.crews.map(crew => (
+									<Link
+										href={crew.link}
+										target='_blank'
+										key={crew.id}
+									>
+										<Flex
+											key={el.id}
+											alignItems='center'
+											color='#FFFFFF'
+											gap='3'
+											w='100%'
+											_hover={{ textDecoration: 'underline' }}
+										>
+											<Avatar
+												src={crew.image}
+												w='50px'
+												h='50px'
+											/>
+											<Text
+												fontWeight='500'
+												fontSize='20px'
+												lineHeight='22.8px'
+											>
+												{crew[`full_name_${locale}`]}
+											</Text>
+										</Flex>
+									</Link>
+								))}
+							</Stack>
+							{/* <Link
 								href={el.link}
 								target='_blank'
 							>
@@ -71,7 +120,7 @@ const FilmCrew = ({ title }: PropsWithTitle) => {
 										</Text>
 									</Box>
 								</Flex>
-							</Link>
+							</Link> */}
 						</Box>
 					))}
 				</Flex>
