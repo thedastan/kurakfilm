@@ -62,7 +62,7 @@ const About = () => {
 	)
 	return (
 		<Box
-			// pt={{ md: '150px', base: '548px' }}
+			pt={{ md: '150px', base: '468px' }}
 			className='about'
 			position='relative'
 		>
