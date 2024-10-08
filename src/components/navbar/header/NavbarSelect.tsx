@@ -1,67 +1,209 @@
+ 'use client'
+
 import {
-	Box,
-	Flex,
-	Menu,
-	MenuButton,
-	MenuItem,
-	MenuList,
-	Text
+  Box,
+  ChakraProps,
+  Flex,
+  Modal,
+  ModalCloseButton,
+  ModalContent,
+  Stack,
+  Text,
+  useDisclosure
 } from '@chakra-ui/react'
-import { usePathname, useRouter } from 'next/navigation'
-import { AiOutlineCheck } from 'react-icons/ai'
-import { IoChevronDown } from 'react-icons/io5'
+import Image from 'next/image'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
-import { poppins } from '@/constants/fonts'
+import { EMAIL_ADDRESS, EMAIL_ADDRESS_LINK } from '@/constants/admin'
 
-import { IHeaderNav } from '../data'
+import message from '../../../assets/img/Vector.png'
+import img from '../../../assets/img/kurak.png'
+import { IHeaderNav, social_contact } from '../data'
 
 const NavbarSelect = ({ header_nav }: { header_nav: IHeaderNav[] }) => {
-	const pathname = usePathname()
-	const { push } = useRouter()
-	const current_name = header_nav.find(el => el.path === pathname)?.name
-	return (
-		<Menu>
-			<MenuButton as={Box}>
-				<Flex
-					alignItems='center'
-					cursor='pointer'
-					className={poppins.className}
-					gap='7px'
-					h='24px'
-					color='#FFFFFF'
-					fontWeight='500'
-					fontSize='15.75px'
-					lineHeight='22.05px'
-				>
-					<Text noOfLines={1}>{current_name}</Text>
-					<IoChevronDown fontSize='20px' />
-				</Flex>
-			</MenuButton>
-			<MenuList
-				w='204px'
-				rounded='12px'
-				bg='#FFFFFF'
-				boxShadow='0px 8px 24px -6px #00000029'
-				padding='4px 4px 4px 9px'
-			>
-				{header_nav.map((el, idx) => (
-					<MenuItem
-						key={idx}
-						onClick={() => push(el.path)}
-						justifyContent='space-between'
-						rounded='6px'
-						alignItems='center'
-						bg={el.path === pathname ? '#F5F5F5' : 'transparent'}
-						p='2'
-						_hover={{ bg: '#F5F5F5' }}
-					>
-						{el.name}
-						{el.path === pathname && <AiOutlineCheck color='#5846FB' />}
-					</MenuItem>
-				))}
-			</MenuList>
-		</Menu>
-	)
+  const { isOpen, onClose, onOpen } = useDisclosure()
+  const pathname = usePathname()
+
+  return (
+    <Box display={{ md: 'none', base: 'block' }}>
+      <Stack
+        onClick={onOpen}
+        w='24px'
+        spacing='2'
+        cursor='pointer'
+      >
+        <Box
+          h='2px'
+          bg='#FFFFFF'
+          w='100%'
+        />
+        <Box
+          h='2px'
+          bg='#FFFFFF'
+          w='100%'
+        />
+        <Box
+          h='2px'
+          bg='#FFFFFF'
+          w='100%'
+        />
+      </Stack>
+
+      <Modal
+        isOpen={isOpen}
+        onClose={onClose}
+      >
+        <ModalContent
+          rounded='0'
+          bg='white'
+          borderRadius={16}
+          w='100%'
+          display='flex'
+          justifyContent='center'
+          alignItems='center'
+          m={0}
+          position='absolute'
+          top='0'
+          right='0'
+        >
+          <ModalCloseButton
+            color='black'
+            right='6'
+            top='3'
+            fontSize='20px'
+          />
+
+          <Box
+            position='relative'
+            mt='50px'
+            w='100%'
+          >
+            <Flex
+              borderTop='solid 1px #28282887'
+              flexDirection='column'
+              justifyContent='center'
+              alignItems='center'
+              position='relative'
+              zIndex='2'
+              gap={8}
+              p={4}
+              mt={2}
+            >
+              <Box>
+                <Stack
+                  spacing='22px'
+                  mt='10px'
+                >
+                  {header_nav.map((el, idx) => (
+                    <Link
+                      href={el.path}
+                      key={idx}
+                      onClick={onClose}
+                    >
+                      <Text
+                        fontSize='16px'
+                        textAlign='center'
+                        fontWeight={400}
+                        fontFamily='sans-serif'
+                        color={pathname === el.path ? 'black' : 'grey'}
+                        _active={{ color: 'black' }}
+                      >
+                        {el.name}
+                      </Text>
+                    </Link>
+                  ))}
+                </Stack>
+              </Box>
+              <Link
+                href={'/'}
+                onClick={onClose}
+              >
+                <Image
+                  width={82}
+                  height={56}
+                  src={img}
+                  alt='img'
+                />
+              </Link>
+              <Box
+                bg='#F6F6F6'
+                w='100%'
+                p={6}
+                display='flex'
+                flexDirection='column'
+                gap={8}
+                borderRadius={10}
+              >
+                <Link
+                  href={EMAIL_ADDRESS_LINK}
+                  target={'_blank'}
+                >
+                  <Text
+                    display='flex'
+                    justifyContent='center'
+                    alignItems='center'
+                    gap={4}
+                    textAlign='center'
+                    fontSize='16px'
+                    lineHeight='19.6px'
+                    color='#2D2E2E'
+                    fontWeight={400}
+                    fontFamily='sans-serif'
+                  >
+                    <Image
+                      style={{ width: '24px', height: '22px' }}
+                      src={message}
+                      alt='img'
+                    />
+                    {EMAIL_ADDRESS}
+                  </Text>
+                </Link>
+                <SocialContacts display='flex' />
+              </Box>
+            </Flex>
+          </Box>
+        </ModalContent>
+      </Modal>
+    </Box>
+  )
+}
+
+function SocialContacts({ display }: ChakraProps) {
+  return (
+    <Flex
+      display={display}
+      px='5'
+      alignItems='center'
+      justifyContent='center'
+      w={{ md: '34%', base: '100%' }}
+      h={{ md: '100%', base: 'auto' }}
+      gap='19.28px'
+    >
+      {social_contact.map((el, idx) => (
+        <Link
+          href={el.path}
+          key={idx}
+          target='_blank'
+        >
+          <Flex
+            w='43.38px'
+            h='43.38px'
+            justifyContent='center'
+            alignItems='center'
+            bg='#28282887'
+            rounded='50%'
+            fontSize='18px'
+          >
+            <el.icon
+              color='white'
+              fontWeight={600}
+            />
+          </Flex>
+        </Link>
+      ))}
+    </Flex>
+  )
 }
 
 export default NavbarSelect

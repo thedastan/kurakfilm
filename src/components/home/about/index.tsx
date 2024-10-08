@@ -208,7 +208,7 @@ const About = () => {
 
 					<Box maxW={{ md: '580px', base: '100%' }}>
 						<TitleComponent>{t('title')}</TitleComponent>
-						<Description mt='5'>{t('description')}</Description>
+						<Text fontWeight = '300' fontSize = '24px'  lineHeight = '28.26px' color = '#CAC7C5' mt='5'>{t('description')}</Text>
 
 						<Flex
 							mt='30px'
