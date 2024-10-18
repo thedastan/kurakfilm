@@ -13,6 +13,7 @@ const StillHeroClient = ({ title }: PropsWithTitle) => {
   const { data, isLoading } = useGalley()
   const [image, setImage] = useState('')
 
+  
   return (
     <> 
     		 <Box display={{ md: 'block', base: 'none' }}>
