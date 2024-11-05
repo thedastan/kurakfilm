@@ -5,12 +5,16 @@ const withNextIntl = createNextIntlPlugin()
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	images: {
-		domains: ['kurak.pythonanywhere.com']
+		domains: ['mych-bot.ch']
+
 	}
+		// domains: ['kurak.pythonanywhere.com']
+
 	// webpack: config => {
 	// 	config.resolve.alias.canvas = false
 
 	// 	return config
+
 	// }
 }
 
