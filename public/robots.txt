@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /_not-found
+
+# Карта сайта
+Sitemap: https://kurakfilm.com/sitemap.xml
