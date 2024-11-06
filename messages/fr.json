@@ -20,7 +20,8 @@
 		"title": "En savoir plus sur le cinéma",
 		"description": "Basées sur des événements réels, plusieurs histoires sur la déresponsabilisation des femmes sont étroitement liées, s'influençant mutuellement, se déroulant dans le contexte de la société traditionnelle et patriarcale du Kirghizistan moderne et aboutissant finalement à une série de résultats tragiques.",
 		"Characteristics": {
-			"chron": "Chronique",
+			"chron": "Temps",
+			"time":"90 min",
 			"language": "Langue",
 			"country": "Pays d'origine",
 			"age": "Restrictions d'âge",

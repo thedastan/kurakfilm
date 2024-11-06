@@ -20,7 +20,8 @@
 		"title": "Per saperne di più sul cinema",
 		"description": "Basato su fatti realmente accaduti, diverse storie di emancipazione femminile sono strettamente intrecciate e si influenzano a vicenda, svolgendosi sullo sfondo della società tradizionale e patriarcale dell'odierno Kirghizistan e sfociando infine in una serie di tragici esiti.",
 		"Characteristics": {
-			"chron": "Cronologia",
+			"chron": "Tempo",
+			"time":"90 min",
 			"language": "Lingua",
 			"country": "Paese di origine",
 			"age": "Limiti di età",

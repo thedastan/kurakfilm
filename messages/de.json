@@ -20,7 +20,8 @@
 		"title": "Mehr über Film",
 		"description": "Basierend auf wahren Begebenheiten sind mehrere Geschichten über die Entmachtung von Frauen eng miteinander verwoben und beeinflussen sich gegenseitig. Sie entfalten sich vor dem Hintergrund der traditionellen, patriarchalischen Gesellschaft des heutigen Kirgisistan und führen schließlich zu einer Reihe von tragischen Ergebnissen.",
 		"Characteristics": {
-			"chron": "Chronik",
+		"chron": "Zeit",
+			"time":"90 min",
 			"language": "Sprache",
 			"country": "Herkunftsland",
 			"age": "Altersbeschränkungen",

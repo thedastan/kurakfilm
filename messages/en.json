@@ -22,7 +22,8 @@
 		"title": "More about film",
 		"description": "Based on true events, several stories about disempowerment of women, are closely intertwined, affecting each other’s, unfolding against the background of the traditional, patriarchal society of modern-day Kyrgyzstan ultimately result in a series of tragic outcomes.",
 		"Characteristics": {
-			"chron": "Chron",
+			"chron": "Length",
+			"time":"90 min",
 			"language": "Language",
 			"country": "Country of Origin",
 			"age": "Age restrictions",

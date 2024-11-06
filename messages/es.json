@@ -20,7 +20,8 @@
 		"title": "Más sobre la película",
 		"description": "Basado en hechos reales, varias historias sobre la desprotección de las mujeres están estrechamente entrelazadas, afectándose mutuamente y desarrollándose en el contexto de la sociedad tradicional y patriarcal del Kirguistán moderno, lo que finalmente resulta en una serie de desenlaces trágicos.",
 		"Characteristics": {
-			"chron": "Crónica",
+			"chron": "Tiempo",
+			"time":"90 min",
 			"language": "Idioma",
 			"country": "País de origen",
 			"age": "Restricciones de edad",

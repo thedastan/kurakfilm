@@ -26,7 +26,7 @@ const Backstage = ({ title }: PropsWithTitle) => {
         >
           {title}
         </TitleComponent>
-        <Frame link='https://drive.google.com/file/d/1f3hdrcsq3sA0sNyKEMdw-O7sFc466nwv/preview' />
+        <Frame link='https://drive.google.com/file/d/1LF0tYshkWlXZ9ZBChskVkg8syIVQ_Kr_/preview' />
         
       </Container>
       <Flex

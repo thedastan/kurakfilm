@@ -53,11 +53,11 @@ const About = () => {
       <Description
         fontSize={{ md: '18px', base: '16px' }}
         lineHeight={{ md: '28px', base: '18px' }}
-      >{`${t('Characteristics.age')}: 16+`}</Description>
+      >{`${t('Characteristics.age')}: 18+`}</Description>
       <Description
         fontSize={{ md: '18px', base: '16px' }}
         lineHeight={{ md: '28px', base: '18px' }}
-      >{`${t('Characteristics.chron')}: D`}</Description>
+      >{`${t('Characteristics.chron')}: ${t('Characteristics.time')}`}</Description>
     </Stack>
   )
   return (

@@ -72,6 +72,7 @@ const Producers = ({ title }: PropsWithTitle) => {
 												fontWeight='500'
 												fontSize='18px'
 												lineHeight='20.52px'
+												textTransform="uppercase"
 											>
 												{el[`full_name_${locale}`]}
 											</Text>
