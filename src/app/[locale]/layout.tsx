@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 		default: SITE_NAME,
 		template: `%s | ${SITE_NAME}`
 	},
-	description: 'Kuraq Film'
+	description: 'The movie “Kurak” is stories of violence, denial of womens rights and freedoms, based on real events'
 }
 
 interface RootLayoutProps {
