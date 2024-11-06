@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Главная страница на всех языках -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Главная страница с локалями -->
   <url>
-    <loc>https://kurakfilm.com/</loc>
+    <loc>https://kurakfilm.com/en</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://kurakfilm.com/ru" />
     <xhtml:link rel="alternate" hreflang="en" href="https://kurakfilm.com/en" />
     <xhtml:link rel="alternate" hreflang="kg" href="https://kurakfilm.com/kg" />
@@ -12,9 +14,9 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://kurakfilm.com/it" />
   </url>
 
-  <!-- Страница "backstage" на всех языках -->
+  <!-- Страница "backstage" с локалями -->
   <url>
-    <loc>https://kurakfilm.com/backstage</loc>
+    <loc>https://kurakfilm.com/en/backstage</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://kurakfilm.com/ru/backstage" />
     <xhtml:link rel="alternate" hreflang="en" href="https://kurakfilm.com/en/backstage" />
     <xhtml:link rel="alternate" hreflang="kg" href="https://kurakfilm.com/kg/backstage" />
@@ -24,9 +26,9 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://kurakfilm.com/it/backstage" />
   </url>
 
-  <!-- Страница "cast-actors" на всех языках -->
+  <!-- Страница "cast-actors" с локалями -->
   <url>
-    <loc>https://kurakfilm.com/cast-actors</loc>
+    <loc>https://kurakfilm.com/en/cast-actors</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://kurakfilm.com/ru/cast-actors" />
     <xhtml:link rel="alternate" hreflang="en" href="https://kurakfilm.com/en/cast-actors" />
     <xhtml:link rel="alternate" hreflang="kg" href="https://kurakfilm.com/kg/cast-actors" />
@@ -36,9 +38,9 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://kurakfilm.com/it/cast-actors" />
   </url>
 
-  <!-- Страница "film-stills" на всех языках -->
+  <!-- Страница "film-stills" с локалями -->
   <url>
-    <loc>https://kurakfilm.com/film-stills</loc>
+    <loc>https://kurakfilm.com/en/film-stills</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://kurakfilm.com/ru/film-stills" />
     <xhtml:link rel="alternate" hreflang="en" href="https://kurakfilm.com/en/film-stills" />
     <xhtml:link rel="alternate" hreflang="kg" href="https://kurakfilm.com/kg/film-stills" />
