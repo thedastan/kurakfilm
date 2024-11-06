@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Главная страница на всех языках -->
+  <url>
+    <loc>https://kurakfilm.com/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kurakfilm.com/ru" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurakfilm.com/en" />
+    <xhtml:link rel="alternate" hreflang="kg" href="https://kurakfilm.com/kg" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurakfilm.com/de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kurakfilm.com/fr" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://kurakfilm.com/es" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://kurakfilm.com/it" />
+  </url>
+
+  <!-- Страница "backstage" на всех языках -->
+  <url>
+    <loc>https://kurakfilm.com/backstage</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kurakfilm.com/ru/backstage" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurakfilm.com/en/backstage" />
+    <xhtml:link rel="alternate" hreflang="kg" href="https://kurakfilm.com/kg/backstage" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurakfilm.com/de/backstage" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kurakfilm.com/fr/backstage" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://kurakfilm.com/es/backstage" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://kurakfilm.com/it/backstage" />
+  </url>
+
+  <!-- Страница "cast-actors" на всех языках -->
+  <url>
+    <loc>https://kurakfilm.com/cast-actors</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kurakfilm.com/ru/cast-actors" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurakfilm.com/en/cast-actors" />
+    <xhtml:link rel="alternate" hreflang="kg" href="https://kurakfilm.com/kg/cast-actors" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurakfilm.com/de/cast-actors" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kurakfilm.com/fr/cast-actors" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://kurakfilm.com/es/cast-actors" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://kurakfilm.com/it/cast-actors" />
+  </url>
+
+  <!-- Страница "film-stills" на всех языках -->
+  <url>
+    <loc>https://kurakfilm.com/film-stills</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kurakfilm.com/ru/film-stills" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurakfilm.com/en/film-stills" />
+    <xhtml:link rel="alternate" hreflang="kg" href="https://kurakfilm.com/kg/film-stills" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurakfilm.com/de/film-stills" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kurakfilm.com/fr/film-stills" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://kurakfilm.com/es/film-stills" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://kurakfilm.com/it/film-stills" />
+  </url>
+</urlset>
