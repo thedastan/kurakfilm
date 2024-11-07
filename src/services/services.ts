@@ -5,6 +5,7 @@ import { IGalley } from '@/types/other.types'
 import { IProducer } from '@/types/producer.types'
 
 import { PUBLIC_API } from '@/api/interceptors'
+import { IBacks } from '@/types/backs'
 
 class FilmServices {
 	private BASE_URL = 'film/'
@@ -45,6 +46,12 @@ class FilmServices {
 
 	async getGalley() {
 		const response = await PUBLIC_API.get<IGalley[]>(this.BASE_URL + `gallery/`)
+
+		return response.data
+	}
+
+	async getBackstage() {
+		const response = await PUBLIC_API.get<IBacks[]>(this.BASE_URL + `backstage/`)
 
 		return response.data
 	}

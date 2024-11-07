@@ -55,3 +55,12 @@ export function useGalley() {
 
 	return { data, isLoading }
 }
+
+export function useBackstage() {
+	const { data, isLoading } = useQuery({
+		queryKey: ['backstage'],
+		queryFn: () => filmService.getBackstage()
+	})
+
+	return { data, isLoading }
+}

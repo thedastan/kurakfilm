@@ -11,12 +11,12 @@ import BottomRightCorner from '@/assets/svg/BottomRightCorner'
 import TopLeftCorner from '@/assets/svg/TopLeftCorner'
 import TopRightCorner from '@/assets/svg/TopRightCorner'
 
-import { useGalley } from '@/hooks/data-hooks'
 
 import TitleComponent from '../ui/texts/TitleComponent'
+import { useBackstage } from '@/hooks/data-hooks'
 
 const Backstage = ({ title }: PropsWithTitle) => {
-  const { data, isLoading } = useGalley()
+  const { data, isLoading } = useBackstage()
   return (
     <Box pt='47px'>
       <Container maxW='container.lg'>
