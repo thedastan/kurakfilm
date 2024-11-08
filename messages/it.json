@@ -2,7 +2,7 @@
 	"Navbar": {
 		"Main": {
 			"home": "Casa",
-			"cast_actors": "Attori del cast",
+			"cast_actors": "Casting",
 			"backstage": "Backstage",
 			"film_stills": "Fotogrammi del film",
 			"news": "Notizie",
@@ -17,15 +17,16 @@
 		"button": "Guarda il trailer"
 	},
 	"About": {
-		"title": "Per saperne di più sul cinema",
-		"description": "Basato su fatti realmente accaduti, diverse storie di emancipazione femminile sono strettamente intrecciate e si influenzano a vicenda, svolgendosi sullo sfondo della società tradizionale e patriarcale dell'odierno Kirghizistan e sfociando infine in una serie di tragici esiti.",
+		"title": "Sul film",
+    "description": "Diverse storie di violenza contro le donne, basate su eventi reali, si intrecciano strettamente e si sviluppano sullo sfondo della società tradizionale del Kirghizistan moderno, portando infine a una serie di eventi tragici.",
 		"Characteristics": {
 			"chron": "Tempo",
 			"time":"90 min",
 			"language": "Lingua",
 			"country": "Paese di origine",
-			"age": "Limiti di età",
-			"1": "D",
+			"age": "Età",
+			"genre": "Genere",
+			"1": "Dramma",
 			"2": "Kirghizo, Russo",
 			"3": "Kirghizistan",
 			"4": "16+"

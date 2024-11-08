@@ -50,6 +50,10 @@ const About = () => {
         fontSize={{ md: '18px', base: '16px' }}
         lineHeight={{ md: '28px', base: '18px' }}
       >{`${t('Characteristics.language')}: ${t('Characteristics.2')}`}</Description>
+       <Description
+        fontSize={{ md: '18px', base: '16px' }}
+        lineHeight={{ md: '28px', base: '18px' }}
+      >{`${t('Characteristics.genre')}: ${t('Characteristics.1')}`}</Description>
       <Description
         fontSize={{ md: '18px', base: '16px' }}
         lineHeight={{ md: '28px', base: '18px' }}

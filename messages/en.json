@@ -2,7 +2,7 @@
 	"Navbar": {
 		"Main": {
 			"home": "Home",
-			"cast_actors": "Cast actors",
+			"cast_actors": "Casting",
 			"backstage": "Backstage",
 			"film_stills": "Film stills",
 			"news": "News",
@@ -19,15 +19,16 @@
 	},
 
 	"About": {
-		"title": "More about film",
-		"description": "Based on true events, several stories about disempowerment of women, are closely intertwined, affecting each other’s, unfolding against the background of the traditional, patriarchal society of modern-day Kyrgyzstan ultimately result in a series of tragic outcomes.",
+		"title": "About the movie",
+    "description": "Several stories of violence against women, based on true events, are closely interwoven and unfold against the backdrop of traditional society in modern Kyrgyzstan, ultimately leading to a series of tragic incidents.",
 		"Characteristics": {
 			"chron": "Length",
 			"time": "90 min",
 			"language": "Language",
 			"country": "Country of Origin",
-			"age": "Age restrictions",
-			"1": "D",
+			"age": "Age",
+			"genre": "Genre",
+			"1": "Drama",
 			"2": "Kyrgyz, Russian",
 			"3": "Kyrgyzstan",
 			"4": "16+"

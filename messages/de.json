@@ -2,7 +2,7 @@
 	"Navbar": {
 		"Main": {
 			"home": "Startseite",
-			"cast_actors": "Darsteller",
+			"cast_actors": "Casting",
 			"backstage": "Hinter den Kulissen",
 			"film_stills": "Filmstills",
 			"news": "Nachrichten",
@@ -17,15 +17,16 @@
 		"button": "Den Trailer ansehen"
 	},
 	"About": {
-		"title": "Mehr über Film",
-		"description": "Basierend auf wahren Begebenheiten sind mehrere Geschichten über die Entmachtung von Frauen eng miteinander verwoben und beeinflussen sich gegenseitig. Sie entfalten sich vor dem Hintergrund der traditionellen, patriarchalischen Gesellschaft des heutigen Kirgisistan und führen schließlich zu einer Reihe von tragischen Ergebnissen.",
+		"title": "Über den Film",
+    "description": "Mehrere Geschichten über Gewalt gegen Frauen, basierend auf wahren Ereignissen, verweben sich eng und entfalten sich vor dem Hintergrund der traditionellen Gesellschaft im modernen Kirgisistan, was schließlich zu einer Reihe tragischer Vorfälle führt.",
 		"Characteristics": {
 		"chron": "Zeit",
 			"time":"90 min",
 			"language": "Sprache",
 			"country": "Herkunftsland",
-			"age": "Altersbeschränkungen",
-			"1": "D",
+			"age": "Alter",
+			"genre": "Genre",
+			"1": "Drama",
 			"2": "Kirgisisch, Russisch",
 			"3": "Kirgisistan",
 			"4": "16+"

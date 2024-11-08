@@ -2,7 +2,7 @@
 	"Navbar": {
 		"Main": {
 			"home": "Inicio",
-			"cast_actors": "Reparto de actores",
+			"cast_actors": "Casting",
 			"backstage": "Detrás de cámaras",
 			"film_stills": "Fotogramas de la película",
 			"news": "Noticias",
@@ -17,15 +17,16 @@
 		"button": "Ver el tráiler"
 	},
 	"About": {
-		"title": "Más sobre la película",
-		"description": "Basado en hechos reales, varias historias sobre la desprotección de las mujeres están estrechamente entrelazadas, afectándose mutuamente y desarrollándose en el contexto de la sociedad tradicional y patriarcal del Kirguistán moderno, lo que finalmente resulta en una serie de desenlaces trágicos.",
+		"title": "Sobre la película",
+    "description": "Varias historias sobre violencia contra mujeres, basadas en hechos reales, se entrelazan estrechamente y se desarrollan en el contexto de la sociedad tradicional del Kirguistán moderno, llevando finalmente a una serie de incidentes trágicos.",
 		"Characteristics": {
 			"chron": "Tiempo",
 			"time":"90 min",
 			"language": "Idioma",
 			"country": "País de origen",
-			"age": "Restricciones de edad",
-			"1": "D",
+			"age": "Edad",
+			"genre": "Género",
+			"1": "Drama",
 			"2": "Kirguís, Ruso",
 			"3": "Kirguistán",
 			"4": "16+"
