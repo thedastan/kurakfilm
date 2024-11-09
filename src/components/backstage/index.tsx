@@ -15,6 +15,10 @@ import TopRightCorner from '@/assets/svg/TopRightCorner'
 import TitleComponent from '../ui/texts/TitleComponent'
 import { useBackstage } from '@/hooks/data-hooks'
 
+import 'react-medium-image-zoom/dist/styles.css';
+import Zoom from 'react-medium-image-zoom';
+
+
 const Backstage = ({ title }: PropsWithTitle) => {
   const { data, isLoading } = useBackstage()
   return (
@@ -52,6 +56,7 @@ const Backstage = ({ title }: PropsWithTitle) => {
                 bgImage='radial-gradient(circle at center, rgba(11, 0, 29, 0.096) 25%, rgba(27, 27, 27, 0.2) 70%, rgba(0, 0, 0, 0) 100%)'
                 zIndex={-1}
               />
+              <Zoom> 
               <Image
                 src={el.image}
                 alt='Image'
@@ -59,6 +64,7 @@ const Backstage = ({ title }: PropsWithTitle) => {
                 height={221.39}
                 className='full-image'
               />
+              </Zoom>
             </Box>
           ))}
         </Flex>

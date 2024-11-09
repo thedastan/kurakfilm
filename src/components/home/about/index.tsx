@@ -1,6 +1,6 @@
 import { Box, Container, Flex, Stack, Text } from '@chakra-ui/react'
 import { useTranslations } from 'next-intl'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 
 import Description from '@/components/ui/texts/Description'
@@ -17,7 +17,14 @@ import useTypedLocale from '@/hooks/useLocale'
 
 import { sponsors } from './sponsors'
 
-const About = () => {
+
+interface DataHome {
+  selectedLogo: string;  
+  selectedLogoAbout: StaticImageData; 
+}
+
+
+const About = ({ data_logo }: { data_logo: DataHome }) => {
   const t = useTranslations('About')
   const t_nav = useTranslations('Navbar.Main')
   const Hadis = useTranslations('Hero')
@@ -176,7 +183,8 @@ const About = () => {
 
                       <Box my={{ md: '14px', base: '2' }}>
                         <Image
-                          src={Logo}
+                        width={130}
+                          src={data_logo.selectedLogoAbout}
                           alt='Logo'
                         />
                       </Box>
@@ -196,7 +204,7 @@ const About = () => {
                         justifyContent='center'
                         gap={{ md: '20px', base: '3' }}
                       >
-                        {sponsors.map((el, idx) => (
+                         {sponsors.map((el, idx) => (
                           <Image
                             key={idx}
                             src={el}

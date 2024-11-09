@@ -6,14 +6,18 @@ import FilmCrew from '@/components/home/film-crew'
 import Hero from '@/components/home/hero'
 import Producers from '@/components/home/producers'
 import News from '@/components/news'
+import dataHome from '@/components/home/hero/data'
+import useLogoImg from '@/components/home/hero/data'
 
 export default function Home() {
 	const crewTitle = useTranslations('crew')('title')
 	const producerTitle = useTranslations('producers')('title')
+
+	const data_logo = useLogoImg()
 	return (
 		<Box>
-			<Hero />
-			<About />
+			<Hero data_logo={data_logo}/>
+			<About data_logo={data_logo}/>
 			<FilmCrew title={crewTitle} />
 			<Producers title={producerTitle} />
 			<News />

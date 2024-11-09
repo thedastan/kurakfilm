@@ -15,7 +15,12 @@ import {
   MINI_HEADER_HEIGHT
 } from '@/config/_variables.config'
 
-const Hero = () => {
+interface DataHome {
+  selectedLogo: string;
+}
+
+
+const Hero = ({ data_logo }: { data_logo: DataHome }) => {
   const t = useTranslations('Hero')
   return (
     <Box
@@ -49,7 +54,7 @@ const Hero = () => {
             w={{ md: '100%', base: '260px' }}
           >
             <Image
-              src={Logo}
+              src={data_logo.selectedLogo}
               alt='Logo'
               className='full-image'
             />

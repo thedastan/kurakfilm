@@ -1,7 +1,7 @@
 'use client'
 
 import { Box, ChakraProps, Container, Flex } from '@chakra-ui/react'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -24,11 +24,16 @@ interface FooterClientCompProps {
 	header_nav: IHeaderNav[]
 	collaboration: string
 	developer: string
+	data_logo: {  
+    selectedLogo: any
+    selectedLogoAbout: any
+  }
 }
 const FooterClientComp = ({
 	header_nav,
 	collaboration,
-	developer
+	developer,
+	data_logo,
 }: FooterClientCompProps) => {
 	const pathname = usePathname()
 	return (
@@ -53,8 +58,9 @@ const FooterClientComp = ({
 						alignItems='center'
 						bg='#050505'
 					>
-						<Image
-							src={FooterLogo}
+						<Image 
+						 width={130}
+							src={data_logo.selectedLogoAbout}
 							alt='Logo'
 						/>
 					</Flex>
