@@ -39,7 +39,9 @@
 		"title": "film crew"
 	},
 	"producers": {
-		"title": "Producers"
+		"title": "Producers",
+		"co-producer":"Co-Producer",
+		"associate-producer":"Associate Producer"
 	},
 	"news": {
 		"title": "News"

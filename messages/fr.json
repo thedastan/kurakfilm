@@ -37,7 +37,9 @@
 		"title": "équipe de tournage"
 	},
 	"producers": {
-		"title": "Producteurs"
+		"title": "Producteurs",
+		"co-producer":"Co-Producteur",
+		"associate-producer":"Producteur Associé"
 	},
 	"news": {
 		"title": "Actualités"

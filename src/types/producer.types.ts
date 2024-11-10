@@ -11,4 +11,5 @@ export interface IProducer {
 	company: string
 	logo: string
 	link: string
+	status: string
 }

@@ -37,7 +37,10 @@
 		"title": "Equipo de filmación"
 	},
 	"producers": {
-		"title": "Productores"
+		"title": "Productores",
+		"co-producer":"Co-Productor",
+		"associate-producer":"Productor Asociado"
+
 	},
 	"news": {
 		"title": "Noticias"

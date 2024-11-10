@@ -12,6 +12,9 @@ import useLogoImg from '@/components/home/hero/data'
 export default function Home() {
 	const crewTitle = useTranslations('crew')('title')
 	const producerTitle = useTranslations('producers')('title')
+	const producerSoTitle = useTranslations('producers')('co-producer')
+	const producerAsTitle = useTranslations('producers')('associate-producer')
+
 
 	const data_logo = useLogoImg()
 	return (
@@ -19,7 +22,11 @@ export default function Home() {
 			<Hero data_logo={data_logo}/>
 			<About data_logo={data_logo}/>
 			<FilmCrew title={crewTitle} />
-			<Producers title={producerTitle} />
+			<Producers 
+			title={producerTitle} 
+			coProducerTitle={producerSoTitle} 
+			associateProducerTitle={producerAsTitle} 
+			  />
 			<News />
 		</Box>
 	)

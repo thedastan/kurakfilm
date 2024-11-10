@@ -37,7 +37,9 @@
 		"title": "Filmteam"
 	},
 	"producers": {
-		"title": "Erzeuger"
+		"title": "Erzeuger",
+		"co-producer":"Co-Produzent",
+		"associate-producer":"Assoziierter Produzent"
 	},
 	"news": {
 		"title": "Nachrichten"

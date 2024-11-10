@@ -37,7 +37,9 @@
 		"title": "съёмочная группа"
 	},
 	"producers": {
-		"title": "Продюсеры"
+		"title": "Продюсеры",
+		"co-producer":"Cо-продюсер",
+		"associate-producer":"Ассоциированный продюсер"
 	},
 	"news": {
 		"title": "Новости"

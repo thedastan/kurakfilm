@@ -37,7 +37,9 @@
 		"title": "troupe cinematografica"
 	},
 	"producers": {
-		"title": "Produttori"
+		"title": "Produttori",
+		"co-producer":"Co-Produttore",
+		"associate-producer":"Produttore Associato"
 	},
 	"news": {
 		"title": "Notizie"

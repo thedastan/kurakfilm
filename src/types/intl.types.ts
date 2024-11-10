@@ -2,7 +2,7 @@ export enum EnumIntl {
 	GERMANY = 'de',
 	ENGLISH = 'en',
 	SPANISH = 'es',
-	FRENCH = 'fr',
+	FRENCH = 'fr',	
 	ITALY = 'it',
 	KYRGYZ = 'kg',
 	RUSSIAN = 'ru'
