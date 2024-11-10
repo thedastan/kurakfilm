@@ -65,7 +65,7 @@ const HeaderClientComp = ({
             alignItems='center'
           >
             <Link href={'#footer'}>
-              <Text
+              <Text display={{ md: 'flex', base: 'none' }}
                 textTransform='uppercase'
                 fontWeight='400'
                 fontSize='16px'
