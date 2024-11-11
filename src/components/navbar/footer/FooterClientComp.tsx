@@ -168,7 +168,7 @@ const FooterClientComp = ({
 						</Flex>
 						<SocialContacts display={{ md: 'none', base: 'flex' }} />
 						<Flex
-							mt={{ md: '0', base: '120px' }}
+							mt={{ md: '0', base: '0px' }}
 							gap='2px'
 							h={{ md: '104px', base: 'auto' }}
 							flexDirection={{ md: 'row', base: 'column' }}

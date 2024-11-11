@@ -63,6 +63,7 @@ const HeaderClientComp = ({
           <Flex
             gap='30px'
             alignItems='center'
+            flexDirection={{ md: 'row', base: "row-reverse" }}
           >
             <Link href={'#footer'}>
               <Text display={{ md: 'flex', base: 'none' }}
