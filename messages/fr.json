@@ -3,55 +3,57 @@
 		"Main": {
 			"home": "Accueil",
 			"cast_actors": "Casting",
-			"backstage": "Les coulisses",
-			"film_stills": "Photos du film",
+			"backstage": "Coulisses",
+			"film_stills": "Photogrammes",
 			"news": "Actualités",
 			"contact": "Contact"
 		},
 		"collaboration": "Si vous souhaitez recevoir un film à des fins éducatives, veuillez nous contacter en utilisant les coordonnées fournies.",
 		"developer": "Développé par Motion Web"
 	},
+
 	"Hero": {
-		"subtitle": "Le prophète Muhammad (ﷺ)",
-		"description": "“LES MEILLEURS D'ENTRE VOUS SONT CEUX QUI SONT LES MEILLEURS AVEC LEURS FEMMES”",
+		"subtitle": "Prophète Muhammad (ﷺ)",
+		"description": "“LES MEILLEURS D'ENTRE VOUS SONT CEUX QUI SONT MEILLEURS AVEC LEURS FEMMES”",
 		"button": "Voir la bande-annonce"
 	},
+
 	"About": {
 		"title": "À propos du film",
-    "description": "Plusieurs histoires de violence contre les femmes, basées sur des faits réels, s'entrelacent étroitement et se déroulent dans le contexte de la société traditionnelle du Kirghizistan moderne, conduisant finalement à une série d'incidents tragiques.",
+		"description": "Plusieurs histoires de violence à l'égard des femmes, basées sur des événements réels, sont étroitement entrelacées et se déroulent dans le contexte d'une société traditionnelle au Kirghizistan moderne, menant finalement à une série d'incidents tragiques.",
 		"Characteristics": {
-			"chron": "Temps",
-			"time":"90 min",
+			"chron": "Durée",
+			"time": "90 min",
 			"language": "Langue",
 			"country": "Pays d'origine",
 			"age": "Âge",
 			"genre": "Genre",
 			"1": "Drame",
-			"2": "Kirghizie, Russe",
+			"2": "Kirghize, Russe",
 			"3": "Kirghizistan",
 			"4": "16+"
 		}
 	},
 
 	"crew": {
-		"title": "équipe de tournage"
+		"title": "Équipe de production"
 	},
 	"producers": {
 		"title": "Producteurs",
-		"co-producer":"Co-Producteur",
-		"associate-producer":"Producteur Associé"
+		"co-producer": "Co-producteurs",
+		"associate-producer": "Producteurs Associés"
 	},
 	"news": {
 		"title": "Actualités"
 	},
 	"backstage": {
-		"title": "Les coulisses"
+		"title": "Coulisses"
 	},
 	"film_stills": {
-		"title": "photos de films",
-		"query": "Nous sommes là pour faire en sorte que votre rêve devienne réalité, même le plus fou, tout ce que vous voulez, nous pouvons le créer pour remplir la maison de vos rêves.",
-		"description": "Nous sommes là pour faire en sorte que votre rêve devienne réalité, même le plus fou, tout ce que vous voulez, nous pouvons le créer pour remplir la maison de vos rêves.",
-		"virgin": "FILLE VIRGINE",
-		"virgin_description": "Nous sommes là pour réaliser votre rêve, même le plus fou, tout ce que vous voulez, nous pouvons le créer pour remplir la maison de vos rêves. Nous sommes là pour réaliser vos rêves, même les plus fous."
+		"title": "Photogrammes",
+		"query": "Nous sommes là pour réaliser votre rêve, peu importe à quel point il est fou, ce que vous voulez, nous pouvons le créer pour réaliser la maison de vos rêves.",
+		"description": "Nous sommes là pour réaliser votre rêve, peu importe à quel point il est fou, ce que vous voulez, nous pouvons le créer pour réaliser la maison de vos rêves.",
+		"virgin": "FILLE VIERGE",
+		"virgin_description": "Nous sommes là pour réaliser votre rêve, peu importe à quel point il est fou, ce que vous voulez, nous pouvons le créer pour réaliser la maison de vos rêves. Nous sommes là pour réaliser votre rêve, peu importe à quel point il est fou."
 	}
 }
