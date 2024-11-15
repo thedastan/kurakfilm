@@ -2,44 +2,46 @@
 	"Navbar": {
 		"Main": {
 			"home": "Startseite",
-			"cast_actors": "Casting",
+			"cast_actors": "Besetzung",
 			"backstage": "Hinter den Kulissen",
-			"film_stills": "Filmstills",
+			"film_stills": "Filmbilder",
 			"news": "Nachrichten",
 			"contact": "Kontakt"
 		},
-		"collaboration": "Wenn Sie einen Film zu Bildungszwecken erhalten möchten, kontaktieren Sie uns bitte über die angegebenen Kontaktdaten.",
+		"collaboration": "Wenn Sie einen Film für Bildungszwecke erhalten möchten, kontaktieren Sie uns bitte über die angegebenen Kontaktdaten.",
 		"developer": "Entwickelt von Motion Web"
 	},
+
 	"Hero": {
 		"subtitle": "Prophet Muhammad (ﷺ)",
-		"description": "“DIE BESTEN UNTER EUCH SIND DIEJENIGEN, DIE AM BESTEN ZU IHREN FRAUEN SIND”",
-		"button": "Den Trailer ansehen"
+		"description": "„DIE BESTEN VON EUCH SIND DIE, DIE ZU IHREN FRAUEN AM BESTEN SIND“",
+		"button": "Trailer ansehen"
 	},
+
 	"About": {
 		"title": "Über den Film",
-    "description": "Mehrere Geschichten über Gewalt gegen Frauen, basierend auf wahren Ereignissen, verweben sich eng und entfalten sich vor dem Hintergrund der traditionellen Gesellschaft im modernen Kirgisistan, was schließlich zu einer Reihe tragischer Vorfälle führt.",
+		"description": "Mehrere Geschichten über Gewalt gegen Frauen, basierend auf wahren Ereignissen, sind eng miteinander verwoben und entfalten sich vor dem Hintergrund der traditionellen Gesellschaft im modernen Kirgisistan, was letztlich zu einer Reihe tragischer Vorfälle führt.",
 		"Characteristics": {
-		"chron": "Zeit",
-			"time":"90 min",
+			"chron": "Länge",
+			"time": "90 Min",
 			"language": "Sprache",
 			"country": "Herkunftsland",
 			"age": "Alter",
 			"genre": "Genre",
 			"1": "Drama",
-			"2": "Kirgisisch, Russisch",
+			"2": "Kirgisch, Russisch",
 			"3": "Kirgisistan",
 			"4": "16+"
 		}
 	},
 
 	"crew": {
-		"title": "Filmteam"
+		"title": "Filmcrew"
 	},
 	"producers": {
-		"title": "Erzeuger",
-		"co-producer":"Co-Produzent",
-		"associate-producer":"Assoziierter Produzent"
+		"title": "Produzenten",
+		"co-producer": "Co-Produzenten",
+		"associate-producer": "Associate Produzenten"
 	},
 	"news": {
 		"title": "Nachrichten"
@@ -48,10 +50,10 @@
 		"title": "Hinter den Kulissen"
 	},
 	"film_stills": {
-		"title": "Filmstills",
-		"query": "Wir sind hier, um Ihren Traum wahr werden zu lassen, egal wie verrückt, was auch immer Sie wollen, wir können es schaffen, Ihren Wohntraum zu erfüllen.",
-		"description": "Wir sind hier, um Ihren Traum wahr werden zu lassen, egal wie verrückt, was auch immer Sie wollen, wir können es schaffen, um Ihren Wohntraum zu verwirklichen..",
-		"virgin": "VIRGIN GIRL",
-		"virgin_description": "Wir sind hier, um Ihren Traum wahr werden zu lassen, egal wie verrückt, was auch immer Sie wollen, können wir schaffen, um Ihr Traumhaus voll zu füllen. Wir sind hier, um Ihren Traum wahr werden zu lassen, egal wie verrückt."
+		"title": "Filmbilder",
+		"query": "Wir sind hier, um Ihren Traum wahr werden zu lassen, egal wie verrückt er ist. Was immer Sie wollen, wir können es erschaffen, um Ihr Traumhaus zu erfüllen.",
+		"description": "Wir sind hier, um Ihren Traum wahr werden zu lassen, egal wie verrückt er ist. Was immer Sie wollen, wir können es erschaffen, um Ihr Traumhaus zu erfüllen.",
+		"virgin": "JUNGFRÄULICHE MÄDCHEN",
+		"virgin_description": "Wir sind hier, um Ihren Traum wahr werden zu lassen, egal wie verrückt er ist. Was immer Sie wollen, wir können es erschaffen, um Ihr Traumhaus zu erfüllen. Wir sind hier, um Ihren Traum wahr werden zu lassen, egal wie verrückt."
 	}
 }
