@@ -2,55 +2,58 @@
 	"Navbar": {
 		"Main": {
 			"home": "Inicio",
-			"cast_actors": "Casting",
-			"backstage": "Detrás de cámaras",
-			"film_stills": "Fotogramas de la película",
+			"cast_actors": "Elenco",
+			"backstage": "Detrás de Cámaras",
+			"film_stills": "Fotogramas",
 			"news": "Noticias",
 			"contact": "Contacto"
 		},
-		"collaboration": "Si desea recibir una película para mostrar con fines educativos, comuníquese con nosotros utilizando los detalles de contacto proporcionados.",
+		"collaboration": "Si desea recibir una película para fines educativos, por favor contáctenos utilizando los detalles de contacto proporcionados.",
 		"developer": "Desarrollado por Motion Web"
 	},
+
 	"Hero": {
 		"subtitle": "Profeta Muhammad (ﷺ)",
-		"description": "“LOS MEJORES DE USTEDES SON LOS QUE MEJOR TRATAN A SUS MUJERES”",
-		"button": "Ver el tráiler"
+		"description": "“LOS MEJORES DE USTEDES SON AQUELLOS QUE SON MEJORES CON SUS MUJERES”",
+		"button": "Ver el Tráiler"
 	},
+
 	"About": {
 		"title": "Sobre la película",
-    "description": "Varias historias sobre violencia contra mujeres, basadas en hechos reales, se entrelazan estrechamente y se desarrollan en el contexto de la sociedad tradicional del Kirguistán moderno, llevando finalmente a una serie de incidentes trágicos.",
+		"description": "Varias historias de violencia contra mujeres, basadas en hechos reales, están entrelazadas y se desarrollan en el contexto de una sociedad tradicional en el Kirguistán moderno, lo que finalmente lleva a una serie de incidentes trágicos.",
 		"Characteristics": {
-			"chron": "Tiempo",
-			"time":"90 min",
+			"chron": "Duración",
+			"time": "90 min",
 			"language": "Idioma",
-			"country": "País de origen",
+			"country": "País de Origen",
 			"age": "Edad",
 			"genre": "Género",
 			"1": "Drama",
-			"2": "Kirguís, Ruso",
+			"2": "Kirguiso, Ruso",
 			"3": "Kirguistán",
 			"4": "16+"
 		}
 	},
 
 	"crew": {
-		"title": "Equipo de filmación"
+		"title": "Equipo de producción"
 	},
 	"producers": {
 		"title": "Productores",
-		"co-producer":"Co-Productor",
-		"associate-producer":"Productor Asociado"
-
+		"co-producer": "Co-productores",
+		"associate-producer": "Productores Asociados"
 	},
 	"news": {
 		"title": "Noticias"
 	},
 	"backstage": {
-		"title": "Detrás de cámaras"
+		"title": "Detrás de Cámaras"
 	},
 	"film_stills": {
-		"title": "Fotogramas de la película",
-		"query": "Estamos aquí para hacer realidad tu sueño, no importa cuán loco sea, lo que quieras, podemos crear para cumplir tu hogar soñado.",
-		"description": "Estamos aquí para hacer realidad tu sueño"
+		"title": "Fotogramas",
+		"query": "Estamos aquí para hacer realidad tu sueño, no importa lo loco que sea, lo que quieras, podemos hacerlo para cumplir tu casa soñada.",
+		"description": "Estamos aquí para hacer realidad tu sueño, no importa lo loco que sea, lo que quieras, podemos hacerlo para cumplir tu casa soñada.",
+		"virgin": "CHICA VIRGEN",
+		"virgin_description": "Estamos aquí para hacer realidad tu sueño, no importa lo loco que sea, lo que quieras, podemos hacerlo para cumplir tu casa soñada. Estamos aquí para hacer realidad tu sueño, no importa lo loco."
 	}
 }
