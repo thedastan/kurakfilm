@@ -40,8 +40,8 @@
 	},
 	"producers": {
 		"title": "Producers",
-		"co-producer":"Co-Producer",
-		"associate-producer":"Associate Producer"
+		"co-producer":"Co-Producers",
+		"associate-producer":"Associate Producers"
 	},
 	"news": {
 		"title": "News"
