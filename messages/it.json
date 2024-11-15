@@ -1,27 +1,29 @@
 {
 	"Navbar": {
 		"Main": {
-			"home": "Casa",
+			"home": "Home",
 			"cast_actors": "Casting",
-			"backstage": "Backstage",
-			"film_stills": "Fotogrammi del film",
+			"backstage": "Dietro le quinte",
+			"film_stills": "Fotogrammi",
 			"news": "Notizie",
-			"contact": "Contatto"
+			"contact": "Contatti"
 		},
-		"collaboration": "Se desiderate ricevere un filmato da proiettare a scopo didattico, contattateci utilizzando i recapiti indicati.",
+		"collaboration": "Se desideri ricevere un film per scopi educativi, contattaci utilizzando i dettagli forniti.",
 		"developer": "Sviluppato da Motion Web"
 	},
+
 	"Hero": {
 		"subtitle": "Profeta Maometto (ﷺ)",
-		"description": "“I MIGLIORI DI VOI SONO QUELLI CHE SONO MIGLIORI CON LE LORO DONNE”",
+		"description": "“I MIGLIORI DI VOI SONO COLORO CHE SONO I MIGLIORI CON LE LORO DONNE”",
 		"button": "Guarda il trailer"
 	},
+
 	"About": {
-		"title": "Sul film",
-    "description": "Diverse storie di violenza contro le donne, basate su eventi reali, si intrecciano strettamente e si sviluppano sullo sfondo della società tradizionale del Kirghizistan moderno, portando infine a una serie di eventi tragici.",
+		"title": "Informazioni sul film",
+		"description": "Diversi racconti di violenza contro le donne, basati su eventi reali, sono strettamente intrecciati e si svolgono sullo sfondo di una società tradizionale nel moderno Kirghizistan, portando infine a una serie di incidenti tragici.",
 		"Characteristics": {
-			"chron": "Tempo",
-			"time":"90 min",
+			"chron": "Durata",
+			"time": "90 min",
 			"language": "Lingua",
 			"country": "Paese di origine",
 			"age": "Età",
@@ -34,24 +36,24 @@
 	},
 
 	"crew": {
-		"title": "troupe cinematografica"
+		"title": "Squadra di produzione"
 	},
 	"producers": {
 		"title": "Produttori",
-		"co-producer":"Co-Produttore",
-		"associate-producer":"Produttore Associato"
+		"co-producer": "Co-produttori",
+		"associate-producer": "Produttori associati"
 	},
 	"news": {
 		"title": "Notizie"
 	},
 	"backstage": {
-		"title": "Backstage"
+		"title": "Dietro le quinte"
 	},
 	"film_stills": {
-		"title": "fotogrammi del film",
-		"query": "Siamo qui per far sì che il vostro sogno diventi realtà, non importa quanto sia folle, qualsiasi cosa vogliate possiamo crearla per riempire completamente la vostra casa dei sogni.",
-		"description": "Siamo qui per far sì che il vostro sogno diventi realtà, non importa quanto sia folle, qualsiasi cosa vogliate possiamo crearla per riempire completamente la vostra casa dei sogni.",
-		"virgin": "RAGAZZA VERGINE",
-		"virgin_description": "Siamo qui per far sì che il vostro sogno diventi realtà, non importa quanto sia folle, qualsiasi cosa vogliate possiamo crearla per riempire completamente la vostra casa dei sogni. Siamo qui per far sì che il vostro sogno diventi realtà, non importa quanto sia folle."
+		"title": "Fotogrammi",
+		"query": "Siamo qui per realizzare il tuo sogno, non importa quanto sia folle, qualunque cosa tu voglia, possiamo creare per realizzare la casa dei tuoi sogni.",
+		"description": "Siamo qui per realizzare il tuo sogno, non importa quanto sia folle, qualunque cosa tu voglia, possiamo creare per realizzare la casa dei tuoi sogni.",
+		"virgin": "RAGAZZA VIERGE",
+		"virgin_description": "Siamo qui per realizzare il tuo sogno, non importa quanto sia folle, qualunque cosa tu voglia, possiamo creare per realizzare la casa dei tuoi sogni. Siamo qui per realizzare il tuo sogno, non importa quanto sia folle."
 	}
 }
