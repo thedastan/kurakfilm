@@ -1,4 +1,3 @@
- 
 'use client'
 
 import { Avatar, Box, Container, Flex, Text } from '@chakra-ui/react'
@@ -15,11 +14,11 @@ import useTypedLocale from '@/hooks/useLocale'
 const Producers = ({ title, coProducerTitle, associateProducerTitle }: PropsWithTitles) => {
 	const { data, isLoading } = useProducer()
 	const locale = useTypedLocale()
-
-	// Separate producers by status
-	const producers = data?.filter(el => el.status === 'producer') || []
+ 
 	const coProducers = data?.filter(el => el.status === 'co-producer') || []
-	const associateProducers = data?.filter(el => el.status === 'associate-producer') || []
+	const associateProducers = (data || []).filter(el => el.status === 'associate-producer' && el.link);  
+	const producers = data?.filter(el => el.status === 'producer' && el.image) || [];
+
 
 	return (
 		<Box mt={{ md: '150px', base: '120px' }}>
@@ -33,7 +32,7 @@ const Producers = ({ title, coProducerTitle, associateProducerTitle }: PropsWith
 								<Box w='100%' h='300px'>
 									<Image src={el.image} alt='Image' height={300} width={300} className='full-image' />
 								</Box>
-								<Link href={el.link} target='_blank'>
+								<Link href={el.link || '/'} target={el.link ? '_blank' : undefined}>
 									<Flex mt='6' gap='3' alignItems='center' _hover={{ textDecoration: 'underline' }}>
 										<Avatar src={el.logo} w='38px' h='38px' />
 										<Box color='#FFFFFF'>
@@ -60,7 +59,7 @@ const Producers = ({ title, coProducerTitle, associateProducerTitle }: PropsWith
 								<Box w='100%' h='300px'>
 									<Image src={el.image} alt='Image' height={300} width={300} className='full-image' />
 								</Box>
-								<Link href={el.link} target='_blank'>
+								<Link href={el.link || '/'} target={el.link ? '_blank' : undefined}>
 									<Flex mt='6' gap='3' alignItems='center' _hover={{ textDecoration: 'underline' }}>
 										<Avatar src={el.logo} w='38px' h='38px' />
 										<Box color='#FFFFFF'>
@@ -110,3 +109,6 @@ const Producers = ({ title, coProducerTitle, associateProducerTitle }: PropsWith
 }
 
 export default Producers
+
+
+  
