@@ -11,6 +11,10 @@ import { CONTAINER_WIDTH } from '@/config/_variables.config'
 import { useProducer } from '@/hooks/data-hooks'
 import useTypedLocale from '@/hooks/useLocale'
 
+import noImage from '@/assets/img/user.png'
+
+
+
 const Producers = ({ title, coProducerTitle, associateProducerTitle }: PropsWithTitles) => {
 	const { data, isLoading } = useProducer()
 	const locale = useTypedLocale()
@@ -19,6 +23,7 @@ const Producers = ({ title, coProducerTitle, associateProducerTitle }: PropsWith
 	const associateProducers = (data || []).filter(el => el.status === 'associate-producer' && el.link);  
 	const producers = data?.filter(el => el.status === 'producer' && el.image) || [];
 
+ 
 
 	return (
 		<Box mt={{ md: '150px', base: '120px' }}>
@@ -79,30 +84,64 @@ const Producers = ({ title, coProducerTitle, associateProducerTitle }: PropsWith
 
 				{/*  Associate Producers */}
 				<TitleComponent fontSize={{ md: 60, base: 36 }} lineHeight="60px"  px={{ md: '0', base: '4' }} mt='40px'>{associateProducerTitle}</TitleComponent>
-				<Flex mt='25px' w='100%' overflowX='auto' className='unscroll'>
-					<Flex px={{ md: '0', base: '4' }} gap='30px'>
-						{associateProducers.map(el => (
-							<Box key={el.id} w='300px' minH='371px'>
-								<Box w='100%' h='300px'>
-									<Image src={el.image} alt='Image' height={300} width={300} className='full-image' />
-								</Box>
-								<Link href={el.link} target='_blank'>
-									<Flex mt='6' gap='3' alignItems='center' _hover={{ textDecoration: 'underline' }}>
-										<Avatar src={el.logo} w='38px' h='38px' />
-										<Box color='#FFFFFF'>
-											<Text fontWeight='500' fontSize='18px' lineHeight='20.52px' textTransform="uppercase">
-												{el[`full_name_${locale}`]}
-											</Text>
-											<Text mt='2' opacity='.5' lineHeight='18.24px'>
-												{el.company}
-											</Text>
-										</Box>
-									</Flex>
-								</Link>
-							</Box>
-						))}
-					</Flex>
-				</Flex>
+				<Flex mt="25px" w="100%" overflowX="auto" className="unscroll">
+  <Flex px={{ md: "0", base: "4" }} gap="30px">
+    {associateProducers.map((el) => (
+      <Box key={el.id} w="300px" minH="371px">
+        <Box w="100%" h="300px">
+          {el.image ? (
+            <Image
+              src={el.image}
+              alt={el[`full_name_${locale}`] || "Image"}
+              height={300}
+              width={300}
+              className="full-image"
+            />
+          ) : (
+            <Box
+              h="300px"
+              w="100%"
+              bg="gray.700"
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              color="white"
+            >
+
+							 
+							 <Avatar src={el.logo} w='100px' h='100px' />
+
+            </Box>
+          )}
+        </Box>
+        <Link href={el.link || "/"} target={el.link ? "_blank" : undefined}>
+          <Flex
+            mt="6"
+            gap="3"
+            alignItems="center"
+            _hover={{ textDecoration: "underline" }}
+          >
+            <Avatar src={el.logo} w="38px" h="38px" />
+            <Box color="#FFFFFF">
+              <Text
+                fontWeight="500"
+                fontSize="18px"
+                lineHeight="20.52px"
+                textTransform="uppercase"
+              >
+                {el[`full_name_${locale}`]}
+              </Text>
+              <Text mt="2" opacity=".5" lineHeight="18.24px">
+                {el.company}
+              </Text>
+            </Box>
+          </Flex>
+        </Link>
+      </Box>
+    ))}
+  </Flex>
+</Flex>
+
 			</Container>
 		</Box>
 	)
@@ -110,5 +149,4 @@ const Producers = ({ title, coProducerTitle, associateProducerTitle }: PropsWith
 
 export default Producers
 
-
-  
+ 

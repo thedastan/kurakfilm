@@ -14,6 +14,7 @@ export default function Home() {
 	const producerTitle = useTranslations('producers')('title')
 	const producerSoTitle = useTranslations('producers')('co-producer')
 	const producerAsTitle = useTranslations('producers')('associate-producer')
+	
 
 
 	const data_logo = useLogoImg()
