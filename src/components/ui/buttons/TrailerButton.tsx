@@ -13,8 +13,10 @@ import { PropsWithTitle } from '@/types/props.types'
 
 const TrailerButton = ({ title }: PropsWithTitle) => {
 	const { isOpen, onClose, onOpen } = useDisclosure()
-	const link =
-		'https://drive.google.com/file/d/1f3hdrcsq3sA0sNyKEMdw-O7sFc466nwv/preview'
+	// const link =
+	// 	'https://drive.google.com/file/d/1f3hdrcsq3sA0sNyKEMdw-O7sFc466nwv/preview'
+
+	const link = 'https://www.youtube.com/embed/ojZXDzvEyH0?si=jlPrPbTdrV2E7Wue'
 	return (
 		<>
 			<Button
