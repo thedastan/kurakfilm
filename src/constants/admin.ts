@@ -21,4 +21,5 @@ export const TELEGRAM_LINK = `https://t.me/+996705045005`
 
 export const LOCATION_LINK = 'https://go.2gis.com/hawqt'
 
-export const MOTION_WEB_LINK = 'https://www.motionweb.kg/'
+export const MOTION_WEB_LINK = 'https://www.bir.kg/'
+
