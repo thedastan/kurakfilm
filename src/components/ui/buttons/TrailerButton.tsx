@@ -8,7 +8,7 @@ import { PropsWithTitle } from '@/types/props.types'
 
 const TrailerButton = ({ title }: PropsWithTitle) => {
 	const link =
-		'https://drive.google.com/file/d/1pUEbvbMEpGeAJQWOjRXgUU541_8ukryN/view?usp=sharing'
+		'https://www.youtube.com/watch?v=Ji5qXSJMWo0'
 	return (
 		<>
 			<Link
@@ -37,3 +37,4 @@ const TrailerButton = ({ title }: PropsWithTitle) => {
 }
 
 export default TrailerButton
+
