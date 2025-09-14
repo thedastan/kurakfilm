@@ -209,10 +209,10 @@ const FooterClientComp = ({
 									lineHeight={{ md: '19.6px', base: '14px' }}
 									opacity='.5'
 								>
-									© 2024 KURAK
+									© 2025 KURAK
 								</Description>
 								<Link
-									href={MOTION_WEB_LINK}
+									href={"https://www.instagram.com/dastan.mukeev"}
 									target='_blank'
 								>
 									<Description
@@ -220,7 +220,7 @@ const FooterClientComp = ({
 										lineHeight={{ md: '19.6px', base: '14px' }}
 										opacity='.5'
 									>
-										{developer}
+										Developed by Dastan Mukeev
 									</Description>
 								</Link>
 							</Flex>
@@ -269,3 +269,4 @@ function SocialContacts({ display }: ChakraProps) {
 }
 
 export default FooterClientComp
+
