@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Description from '@/components/ui/texts/Description'
 import TitleComponent from '@/components/ui/texts/TitleComponent'
 
-import AboutImage from '@/assets/img/about.png'
+import AboutImage from '@/assets/img/poster.png'
 import Logo from '@/assets/img/footer-logo.svg'
 import LogoLine from '@/assets/img/logo-line.svg'
 
@@ -133,7 +133,7 @@ const About = ({ data_logo }: { data_logo: DataHome }) => {
 										justifyContent='space-between'
 										textTransform='uppercase'
 									>
-										<Box>
+										{/* <Box>
 											<Text
 												color='#CAC7C5'
 												fontSize={{ md: '9.12px', base: '7px' }}
@@ -154,9 +154,9 @@ const About = ({ data_logo }: { data_logo: DataHome }) => {
 												<Text>{Hadis('subtitle')}</Text>
 												<Text>Sunan AL-TIRMIDHI</Text>
 											</Box>
-										</Box>
+										</Box> */}
 
-										<Flex
+										{/* <Flex
 											flexDirection='column'
 											alignItems='center'
 										>
@@ -209,7 +209,7 @@ const About = ({ data_logo }: { data_logo: DataHome }) => {
 													/>
 												))}
 											</Flex>
-										</Flex>
+										</Flex> */}
 									</Flex>
 								</Flex>
 							</Box>
